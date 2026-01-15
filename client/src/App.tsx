@@ -1,16 +1,65 @@
-import { Switch, Route } from "wouter";
-import { queryClient } from "./lib/queryClient";
+import { Switch, Route, useLocation } from "wouter";
+import { useEffect } from "react";
 import { QueryClientProvider } from "@tanstack/react-query";
+import { queryClient } from "./lib/queryClient";
 import { Toaster } from "@/components/ui/toaster";
-import { TooltipProvider } from "@/components/ui/tooltip";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
+
+// Pages
+import Home from "@/pages/Home";
+import Committee from "@/pages/Committee";
+import Speakers from "@/pages/Speakers";
+import CFP from "@/pages/CFP";
+import Submission from "@/pages/Submission";
+import Program from "@/pages/Program";
+import Registration from "@/pages/Registration";
+import Contact from "@/pages/Contact";
 import NotFound from "@/pages/not-found";
+
+// Scroll to top on route change
+function ScrollToTop() {
+  const [pathname] = useLocation();
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  
+  return null;
+}
 
 function Router() {
   return (
     <Switch>
-      {/* Add pages below */}
-      {/* <Route path="/" component={Home}/> */}
-      {/* Fallback to 404 */}
+      <Route path="/" component={Home} />
+      
+      {/* Committee Routes */}
+      <Route path="/committee" component={Committee} />
+      <Route path="/committee/tpc" component={Committee} />
+      
+      {/* Speakers Routes */}
+      <Route path="/speakers" component={Speakers} />
+      <Route path="/speakers/invited" component={Speakers} />
+      
+      {/* CFP Routes */}
+      <Route path="/cfp" component={CFP} />
+      <Route path="/cfp/special" component={CFP} />
+      
+      {/* Submission Routes */}
+      <Route path="/submission" component={Submission} />
+      <Route path="/submission/awards" component={Submission} />
+      
+      {/* Program Routes */}
+      <Route path="/program" component={Program} />
+      <Route path="/program/venue" component={Program} />
+      
+      {/* Registration Routes */}
+      <Route path="/registration" component={Registration} />
+      <Route path="/registration/now" component={Registration} />
+      
+      {/* Other */}
+      <Route path="/contact" component={Contact} />
+      
       <Route component={NotFound} />
     </Switch>
   );
@@ -19,10 +68,15 @@ function Router() {
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <Router />
-      </TooltipProvider>
+      <ScrollToTop />
+      <div className="flex flex-col min-h-screen font-sans bg-background text-foreground">
+        <Navbar />
+        <main className="flex-grow animate-in">
+          <Router />
+        </main>
+        <Footer />
+      </div>
+      <Toaster />
     </QueryClientProvider>
   );
 }
