@@ -1,103 +1,125 @@
-import { Mail, MapPin, Calendar, Globe } from "lucide-react";
+import { Mail, MapPin, Calendar, Globe, Send, UserCheck } from "lucide-react";
+import { Link } from "wouter";
 
 export function Footer() {
   return (
-    <footer className="bg-[#091E35] text-white pt-16 pb-8 border-t-4 border-[hsl(var(--accent))]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-          
-          {/* Column 1: About */}
-          <div>
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-[hsl(var(--accent))] rounded flex items-center justify-center font-bold text-[#091E35] text-xl">
-                IP
+    <>
+      {/* CTA SECTION - 150px height, responsive and professional */}
+      <section className="relative h-[200px] md:h-[150px] bg-[#094090] overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-primary to-[hsl(var(--accent))] opacity-10" />
+        <div className="absolute -left-20 -top-20 w-64 h-64 bg-white/5 rounded-full" />
+        <div className="max-w-7xl mx-auto px-4 h-full flex flex-col md:flex-row items-center justify-between gap-6 relative z-10">
+          <div className="text-center md:text-left">
+            <h2 className="text-2xl md:text-3xl font-bold text-white font-display flex items-center gap-3 justify-center md:justify-start">
+              <UserCheck className="text-[hsl(var(--accent))]" /> Ready to join us in Penang?
+            </h2>
+            <p className="text-blue-200 text-sm md:text-base mt-1">Secure your spot at IPEE 2026 and be part of the future of power engineering.</p>
+          </div>
+          <Link href="/registration">
+            <button className="px-10 py-4 bg-[hsl(var(--accent))] text-[#094090] font-bold rounded-full shadow-2xl hover:scale-105 hover:shadow-[hsl(var(--accent))/30] transition-all flex items-center gap-2 uppercase tracking-widest text-xs whitespace-nowrap">
+              Register Now <Send className="w-4 h-4" />
+            </button>
+          </Link>
+        </div>
+      </section>
+
+      <footer className="bg-[#091E35] text-white pt-16 pb-8 border-t-4 border-[hsl(var(--accent))]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            
+            {/* Column 1: About */}
+            <div>
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 bg-[hsl(var(--accent))] rounded flex items-center justify-center font-bold text-[#091E35] text-xl">
+                  IP
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold leading-none">IPEE 2026</h3>
+                  <p className="text-xs text-gray-400 mt-1">International Power & Electrical Engineering</p>
+                </div>
               </div>
-              <div>
-                <h3 className="text-xl font-bold leading-none">IPEE 2026</h3>
-                <p className="text-xs text-gray-400 mt-1">International Power & Electrical Engineering</p>
+              <p className="text-gray-400 text-sm leading-relaxed mb-6">
+                A premier international platform for researchers, practitioners, and educators to present and discuss the most recent innovations, trends, and concerns in the fields of Power and Electrical Engineering.
+              </p>
+            </div>
+
+            {/* Column 2: Quick Links */}
+            <div>
+              <h3 className="text-lg font-bold mb-6 text-white border-b border-gray-700 pb-2 inline-block">Quick Links</h3>
+              <ul className="space-y-3 text-sm text-gray-400">
+                <li><Link href="/cfp" className="hover:text-[hsl(var(--accent))] transition-colors flex items-center gap-2">Call for Papers</Link></li>
+                <li><Link href="/committee" className="hover:text-[hsl(var(--accent))] transition-colors flex items-center gap-2">Committee Members</Link></li>
+                <li><Link href="/submission" className="hover:text-[hsl(var(--accent))] transition-colors flex items-center gap-2">Submission Guide</Link></li>
+                <li><Link href="/registration" className="hover:text-[hsl(var(--accent))] transition-colors flex items-center gap-2">Registration</Link></li>
+                <li><Link href="/program" className="hover:text-[hsl(var(--accent))] transition-colors flex items-center gap-2">Conference Program</Link></li>
+              </ul>
+            </div>
+
+            {/* Column 3: Contact */}
+            <div>
+              <h3 className="text-lg font-bold mb-6 text-white border-b border-gray-700 pb-2 inline-block">Contact Us</h3>
+              <div className="space-y-4 text-sm text-gray-400">
+                <div className="flex items-start gap-3">
+                  <Mail className="w-5 h-5 text-[hsl(var(--accent))] shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-medium text-white">Conference Secretary: Amy Hu</p>
+                    <a href="mailto:ipee_conf@126.com" className="hover:text-white transition-colors">ipee_conf@126.com</a>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-[hsl(var(--accent))] shrink-0 mt-0.5" />
+                  <p>Penang, Malaysia</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Globe className="w-5 h-5 text-[hsl(var(--accent))] shrink-0 mt-0.5" />
+                  <a href="https://ipee.net" className="hover:text-white transition-colors">www.ipee.net</a>
+                </div>
               </div>
             </div>
-            <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              A premier international platform for researchers, practitioners, and educators to present and discuss the most recent innovations, trends, and concerns in the fields of Power and Electrical Engineering.
-            </p>
-          </div>
 
-          {/* Column 2: Quick Links */}
-          <div>
-            <h3 className="text-lg font-bold mb-6 text-white border-b border-gray-700 pb-2 inline-block">Quick Links</h3>
-            <ul className="space-y-3 text-sm text-gray-400">
-              <li><a href="/cfp" className="hover:text-[hsl(var(--accent))] transition-colors flex items-center gap-2">Call for Papers</a></li>
-              <li><a href="/committee" className="hover:text-[hsl(var(--accent))] transition-colors flex items-center gap-2">Committee Members</a></li>
-              <li><a href="/submission" className="hover:text-[hsl(var(--accent))] transition-colors flex items-center gap-2">Submission Guide</a></li>
-              <li><a href="/registration" className="hover:text-[hsl(var(--accent))] transition-colors flex items-center gap-2">Registration</a></li>
-              <li><a href="/program" className="hover:text-[hsl(var(--accent))] transition-colors flex items-center gap-2">Conference Program</a></li>
-            </ul>
-          </div>
-
-          {/* Column 3: Contact */}
-          <div>
-            <h3 className="text-lg font-bold mb-6 text-white border-b border-gray-700 pb-2 inline-block">Contact Us</h3>
-            <div className="space-y-4 text-sm text-gray-400">
-              <div className="flex items-start gap-3">
-                <Mail className="w-5 h-5 text-[hsl(var(--accent))] shrink-0 mt-0.5" />
-                <div>
-                  <p className="font-medium text-white">Conference Secretary: Amy Hu</p>
-                  <a href="mailto:ipee_conf@126.com" className="hover:text-white transition-colors">ipee_conf@126.com</a>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-[hsl(var(--accent))] shrink-0 mt-0.5" />
-                <p>Penang, Malaysia</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <Globe className="w-5 h-5 text-[hsl(var(--accent))] shrink-0 mt-0.5" />
-                <a href="https://ipee.net" className="hover:text-white transition-colors">www.ipee.net</a>
-              </div>
+            {/* Column 4: Important Dates */}
+            <div>
+              <h3 className="text-lg font-bold mb-6 text-white border-b border-gray-700 pb-2 inline-block">Important Dates</h3>
+              <ul className="space-y-4 text-sm">
+                <li className="flex gap-4">
+                  <div className="bg-white/10 rounded px-2 py-1 text-center min-w-[50px]">
+                    <span className="block text-xs uppercase text-gray-400">Feb</span>
+                    <span className="block text-lg font-bold text-[hsl(var(--accent))]">20</span>
+                  </div>
+                  <div>
+                    <p className="font-medium text-white">Abstract Submission</p>
+                    <p className="text-xs text-gray-400">Deadline for first round</p>
+                  </div>
+                </li>
+                <li className="flex gap-4">
+                  <div className="bg-white/10 rounded px-2 py-1 text-center min-w-[50px]">
+                    <span className="block text-xs uppercase text-gray-400">Mar</span>
+                    <span className="block text-lg font-bold text-[hsl(var(--accent))]">15</span>
+                  </div>
+                  <div>
+                    <p className="font-medium text-white">Full Paper</p>
+                    <p className="text-xs text-gray-400">Final submission deadline</p>
+                  </div>
+                </li>
+                <li className="flex gap-4">
+                  <div className="bg-white/10 rounded px-2 py-1 text-center min-w-[50px]">
+                    <span className="block text-xs uppercase text-gray-400">Jul</span>
+                    <span className="block text-lg font-bold text-[hsl(var(--accent))]">14</span>
+                  </div>
+                  <div>
+                    <p className="font-medium text-white">Conference Day</p>
+                    <p className="text-xs text-gray-400">Opening ceremony</p>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
 
-          {/* Column 4: Important Dates */}
-          <div>
-            <h3 className="text-lg font-bold mb-6 text-white border-b border-gray-700 pb-2 inline-block">Important Dates</h3>
-            <ul className="space-y-4 text-sm">
-              <li className="flex gap-4">
-                <div className="bg-white/10 rounded px-2 py-1 text-center min-w-[50px]">
-                  <span className="block text-xs uppercase text-gray-400">Feb</span>
-                  <span className="block text-lg font-bold text-[hsl(var(--accent))]">20</span>
-                </div>
-                <div>
-                  <p className="font-medium text-white">Abstract Submission</p>
-                  <p className="text-xs text-gray-400">Deadline for first round</p>
-                </div>
-              </li>
-              <li className="flex gap-4">
-                <div className="bg-white/10 rounded px-2 py-1 text-center min-w-[50px]">
-                  <span className="block text-xs uppercase text-gray-400">Mar</span>
-                  <span className="block text-lg font-bold text-[hsl(var(--accent))]">15</span>
-                </div>
-                <div>
-                  <p className="font-medium text-white">Full Paper</p>
-                  <p className="text-xs text-gray-400">Final submission deadline</p>
-                </div>
-              </li>
-              <li className="flex gap-4">
-                <div className="bg-white/10 rounded px-2 py-1 text-center min-w-[50px]">
-                  <span className="block text-xs uppercase text-gray-400">Jul</span>
-                  <span className="block text-lg font-bold text-[hsl(var(--accent))]">14</span>
-                </div>
-                <div>
-                  <p className="font-medium text-white">Conference Day</p>
-                  <p className="text-xs text-gray-400">Opening ceremony</p>
-                </div>
-              </li>
-            </ul>
+          <div className="pt-8 border-t border-gray-800 text-center text-sm text-gray-500">
+            <p>© 2026 2nd International Power and Electrical Engineering Conference (IPEE 2026). All Rights Reserved.</p>
           </div>
         </div>
-
-        <div className="pt-8 border-t border-gray-800 text-center text-sm text-gray-500">
-          <p>© 2026 2nd International Power and Electrical Engineering Conference (IPEE 2026). All Rights Reserved.</p>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </>
   );
 }
