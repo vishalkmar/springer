@@ -57,7 +57,7 @@ export function Navbar() {
       href: "/registration",
       children: [
         { label: "Guidelines", href: "/registration" },
-        { label: "Register Now", href: "/registration/now" },
+        { label: "Register Now", href: "/registration#registration-form" },
       ]
     },
     { label: "Contact", href: "/contact" },

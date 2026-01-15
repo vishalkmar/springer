@@ -1,11 +1,16 @@
 import { motion } from "framer-motion";
 
-export function PageBanner({ title, subtitle, image = "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop" }) {
+interface PageBannerProps {
+  title: string;
+  subtitle?: string;
+  image?: string;
+}
+
+export function PageBanner({ title, subtitle, image = "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop" }: PageBannerProps) {
   return (
     <section className="relative h-[40vh] md:h-[50vh] lg:h-[60vh] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img src={image} alt={title} className="w-full h-full object-cover" />
-        {/* Lightened overlay: using primary blue with lower opacity and a different blend mode or just a soft gradient */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#094090]/40 to-[#094090]/20" />
         <div className="absolute inset-0 bg-black/10" /> 
       </div>
