@@ -1,15 +1,15 @@
-import { Link, useLocation } from "wouter";
+import { Link as WouterLink, useLocation } from "wouter";
 import { useState } from "react";
-import { Menu, X, ChevronDown, ExternalLink } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeMobileSub, setActiveMobileSub] = useState<string | null>(null);
   const [location] = useLocation();
 
   const isActive = (path: string) => location === path;
 
-  // Nav Links Configuration
   const navLinks = [
     { label: "Home", href: "/" },
     { 
@@ -60,14 +60,14 @@ export function Navbar() {
         { label: "Register Now", href: "/registration/now" },
       ]
     },
+    { label: "Contact", href: "/contact" },
   ];
 
   return (
     <nav className="bg-[#094090] text-white shadow-xl sticky top-0 z-50 border-b-4 border-[hsl(var(--accent))]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          {/* Logo Area */}
-          <Link href="/" className="flex-shrink-0 flex items-center space-x-3 group cursor-pointer">
+          <WouterLink href="/" className="flex-shrink-0 flex items-center space-x-3 group cursor-pointer">
             <div className="w-10 h-10 bg-white rounded-md flex items-center justify-center shadow-lg group-hover:rotate-3 transition-transform">
               <span className="text-[#094090] font-bold text-xl font-display">IP</span>
             </div>
@@ -75,13 +75,12 @@ export function Navbar() {
               <span className="font-bold text-xl tracking-tight leading-none">IPEE 2026</span>
               <span className="text-xs text-blue-200 font-light">Power & Electrical Engineering</span>
             </div>
-          </Link>
+          </WouterLink>
 
-          {/* Desktop Nav */}
           <div className="hidden lg:flex items-center space-x-1">
             {navLinks.map((link) => (
               <div key={link.label} className="relative group">
-                <Link href={link.href}>
+                <WouterLink href={link.href}>
                   <div className={`
                     px-3 py-2 rounded-md text-sm font-medium flex items-center gap-1 cursor-pointer transition-colors
                     ${isActive(link.href) ? 'bg-white/10 text-white' : 'text-blue-100 hover:bg-white/5 hover:text-white'}
@@ -89,19 +88,18 @@ export function Navbar() {
                     {link.label}
                     {link.children && <ChevronDown className="w-3 h-3 opacity-70 group-hover:rotate-180 transition-transform" />}
                   </div>
-                </Link>
+                </WouterLink>
 
-                {/* Dropdown */}
                 {link.children && (
                   <div className="absolute left-0 mt-0 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top pt-2">
                     <div className="bg-white rounded-lg shadow-xl ring-1 ring-black ring-opacity-5 overflow-hidden">
                       <div className="py-1">
                         {link.children.map((child) => (
-                          <Link key={child.label} href={child.href}>
+                          <WouterLink key={child.label} href={child.href}>
                             <div className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-primary cursor-pointer border-l-2 border-transparent hover:border-primary">
                               {child.label}
                             </div>
-                          </Link>
+                          </WouterLink>
                         ))}
                       </div>
                     </div>
@@ -109,58 +107,39 @@ export function Navbar() {
                 )}
               </div>
             ))}
-            
-            <a href="https://ipee.net" target="_blank" rel="noopener noreferrer" 
-               className="ml-4 px-4 py-2 rounded bg-white/10 text-white text-sm font-medium hover:bg-white/20 transition-colors flex items-center gap-2">
-               History <ExternalLink className="w-3 h-3" />
-            </a>
           </div>
 
-          {/* Mobile menu button */}
           <div className="lg:hidden flex items-center">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-blue-100 hover:text-white hover:bg-blue-800 focus:outline-none"
-            >
+            <button onClick={() => setIsOpen(!isOpen)} className="inline-flex items-center justify-center p-2 rounded-md text-blue-100 hover:text-white hover:bg-blue-800 focus:outline-none">
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-[#07367a] overflow-hidden"
-          >
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <motion.div initial={{ opacity: 0, x: "100%" }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: "100%" }} className="fixed inset-0 z-50 lg:hidden bg-[#07367a] flex flex-col pt-20">
+            <button onClick={() => setIsOpen(false)} className="absolute top-6 right-6 p-2 text-white"><X className="w-8 h-8" /></button>
+            <div className="px-6 space-y-4 overflow-y-auto pb-10">
               {navLinks.map((link) => (
-                <div key={link.label}>
-                  <Link href={link.href}>
-                    <div 
-                      onClick={() => !link.children && setIsOpen(false)}
-                      className={`block px-3 py-2 rounded-md text-base font-medium cursor-pointer ${
-                      isActive(link.href) ? 'bg-blue-800 text-white' : 'text-blue-100 hover:bg-blue-800 hover:text-white'
-                    }`}>
-                      {link.label}
-                    </div>
-                  </Link>
+                <div key={link.label} className="border-b border-white/10 pb-2">
+                  <div className="flex items-center justify-between py-2" onClick={() => link.children ? setActiveMobileSub(activeMobileSub === link.label ? null : link.label) : (setIsOpen(false), window.location.href = link.href)}>
+                    <span className={`text-xl font-bold ${isActive(link.href) ? 'text-[hsl(var(--accent))]' : 'text-white'}`}>{link.label}</span>
+                    {link.children && <ChevronDown className={`w-6 h-6 transform transition-transform ${activeMobileSub === link.label ? 'rotate-180' : ''}`} />}
+                  </div>
                   {link.children && (
-                    <div className="pl-6 space-y-1 border-l border-blue-600/30 ml-3 my-1">
-                      {link.children.map((child) => (
-                        <Link key={child.label} href={child.href}>
-                          <div 
-                            onClick={() => setIsOpen(false)}
-                            className="block px-3 py-2 rounded-md text-sm font-medium text-blue-200 hover:text-white hover:bg-blue-800/50 cursor-pointer">
-                            {child.label}
-                          </div>
-                        </Link>
-                      ))}
-                    </div>
+                    <AnimatePresence>
+                      {activeMobileSub === link.label && (
+                        <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="pl-4 space-y-3 overflow-hidden mt-2">
+                          {link.children.map((child) => (
+                            <WouterLink key={child.label} href={child.href}>
+                              <div onClick={() => setIsOpen(false)} className="text-blue-200 text-lg py-1">{child.label}</div>
+                            </WouterLink>
+                          ))}
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
                   )}
                 </div>
               ))}

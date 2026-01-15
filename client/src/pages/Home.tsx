@@ -48,14 +48,14 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/submission">
+              <Link href="/registration">
                 <Button variant="accent" size="lg" className="w-full sm:w-auto">
-                  Submit Paper
+                  Register Now
                 </Button>
               </Link>
-              <Link href="/cfp">
+              <Link href="/contact">
                 <Button variant="outline" size="lg" className="w-full sm:w-auto border-white text-white hover:bg-white hover:text-primary">
-                  Call For Papers
+                  Contact Us
                 </Button>
               </Link>
             </div>

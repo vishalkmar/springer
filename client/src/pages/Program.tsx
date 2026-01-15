@@ -1,80 +1,88 @@
+import { PageBanner } from "@/components/PageBanner";
 import { SectionHeader } from "@/components/SectionHeader";
-import { Clock, MapPin } from "lucide-react";
+import { MapPin, Calendar, Clock, Info, Navigation, Building2 } from "lucide-react";
 
 export default function Program() {
-  const schedule = [
+  const venues = [
     {
-      day: "Day 1",
-      date: "July 14, 2026",
-      events: [
-        { time: "09:00 - 12:00", title: "Registration & Material Collection", location: "Lobby" },
-        { time: "14:00 - 17:00", title: "Technical Tutorials / Workshops", location: "Room A & B" },
-        { time: "18:00 - 20:00", title: "Welcome Reception", location: "Grand Ballroom" }
-      ]
+      name: "Grand Penang Ballroom",
+      type: "Main Conference Venue",
+      image: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?q=80&w=2069",
+      desc: "A state-of-the-art facility equipped with high-fidelity audio systems and 4K projection for our keynote sessions."
     },
     {
-      day: "Day 2",
-      date: "July 15, 2026",
-      events: [
-        { time: "09:00 - 09:30", title: "Opening Ceremony", location: "Grand Ballroom" },
-        { time: "09:30 - 10:30", title: "Keynote Speech I", location: "Grand Ballroom" },
-        { time: "10:30 - 11:00", title: "Coffee Break & Group Photo", location: "Foyer" },
-        { time: "11:00 - 12:00", title: "Keynote Speech II", location: "Grand Ballroom" },
-        { time: "12:00 - 13:30", title: "Lunch Break", location: "Restaurant" },
-        { time: "13:30 - 18:00", title: "Parallel Sessions (Oral)", location: "Rooms 1-4" }
-      ]
-    },
-    {
-      day: "Day 3",
-      date: "July 16, 2026",
-      events: [
-        { time: "09:00 - 10:00", title: "Invited Speeches", location: "Grand Ballroom" },
-        { time: "10:00 - 12:00", title: "Parallel Sessions (Oral)", location: "Rooms 1-4" },
-        { time: "12:00 - 13:30", title: "Lunch Break", location: "Restaurant" },
-        { time: "13:30 - 16:00", title: "Parallel Sessions / Poster Session", location: "Exhibition Hall" },
-        { time: "18:30 - 21:00", title: "Gala Dinner & Awards", location: "Grand Ballroom" }
-      ]
-    },
-    {
-      day: "Day 4",
-      date: "July 17, 2026",
-      events: [
-        { time: "09:00 - 17:00", title: "Technical Visit / City Tour (Optional)", location: "Meet at Lobby" }
-      ]
+      name: "Heritage Research Center",
+      type: "Workshops & Tutorials",
+      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069",
+      desc: "Located just steps from the main hotel, offering modern meeting rooms and collaborative spaces."
     }
   ];
 
   return (
-    <div className="bg-white min-h-screen py-16">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeader title="Conference Program" centered subtitle="Tentative Schedule - Subject to Change" />
-        
-        <div className="mt-12 space-y-12">
-          {schedule.map((day, i) => (
-            <div key={i} className="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
-              <div className="bg-primary text-white p-4 flex justify-between items-center">
-                <h3 className="text-xl font-bold">{day.day}</h3>
-                <span className="font-medium opacity-90">{day.date}</span>
+    <div className="bg-white min-h-screen">
+      <PageBanner 
+        title="Conference Venue" 
+        subtitle="Experience the fusion of technology and heritage in Penang, Malaysia"
+        image="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?q=80&w=2070"
+      />
+
+      <div className="max-w-6xl mx-auto px-4 py-20">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <div className="inline-flex items-center gap-2 px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-bold mb-6">
+              <MapPin className="w-4 h-4" /> Penang, Malaysia
+            </div>
+            <h2 className="text-5xl font-bold text-gray-900 font-display mb-8 tracking-tight">World-Class Facilities in <span className="text-primary">Penang</span></h2>
+            <div className="prose prose-lg text-gray-600 mb-10">
+              <p>IPEE 2026 will be hosted at the premier conference centers of Penang, known for their exceptional service and advanced technological infrastructure.</p>
+              <p>Penang, a UNESCO World Heritage site, provides the perfect backdrop for intellectual exchange, combining a rich history with a booming high-tech sector often referred to as the 'Silicon Valley of the East'.</p>
+            </div>
+            
+            <div className="space-y-4">
+              <div className="flex gap-4 p-5 bg-gray-50 rounded-2xl border border-gray-100">
+                <Calendar className="w-6 h-6 text-primary shrink-0" />
+                <div>
+                   <h4 className="font-bold text-gray-900">Conference Dates</h4>
+                   <p className="text-gray-500">July 14 - July 17, 2026</p>
+                </div>
               </div>
-              <div className="divide-y divide-gray-100">
-                {day.events.map((event, idx) => (
-                  <div key={idx} className="p-4 md:p-6 hover:bg-gray-50 transition-colors grid md:grid-cols-[150px_1fr_150px] gap-4 items-center">
-                    <div className="flex items-center text-primary font-bold">
-                      <Clock className="w-4 h-4 mr-2" />
-                      {event.time}
-                    </div>
-                    <div className="font-semibold text-gray-800">
-                      {event.title}
-                    </div>
-                    <div className="flex items-center text-gray-500 text-sm md:justify-end">
-                      <MapPin className="w-4 h-4 mr-1" />
-                      {event.location}
-                    </div>
-                  </div>
-                ))}
+              <div className="flex gap-4 p-5 bg-gray-50 rounded-2xl border border-gray-100">
+                <Navigation className="w-6 h-6 text-[hsl(var(--accent))] shrink-0" />
+                <div>
+                   <h4 className="font-bold text-gray-900">How to Get There</h4>
+                   <p className="text-gray-500">15 minutes from Penang International Airport (PEN)</p>
+                </div>
               </div>
             </div>
-          ))}
+          </div>
+          
+          <div className="relative group">
+            <div className="absolute inset-0 bg-primary rounded-3xl transform rotate-3 scale-95 opacity-10 group-hover:rotate-1 transition-transform" />
+            <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?q=80&w=2069" alt="Venue" className="relative rounded-3xl shadow-2xl" />
+          </div>
+        </div>
+
+        <div className="mt-32">
+          <SectionHeader title="Location Details" centered />
+          <div className="grid md:grid-cols-2 gap-10 mt-16">
+            {venues.map((venue, i) => (
+              <div key={i} className="bg-white rounded-[2rem] overflow-hidden border border-gray-100 shadow-xl group">
+                <div className="h-64 relative">
+                  <img src={venue.image} alt={venue.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
+                  <div className="absolute top-6 left-6 px-4 py-2 bg-white/90 backdrop-blur-sm rounded-full text-xs font-bold text-primary shadow-lg">
+                    {venue.type}
+                  </div>
+                </div>
+                <div className="p-10">
+                   <h4 className="text-2xl font-bold mb-4 font-display">{venue.name}</h4>
+                   <p className="text-gray-500 leading-relaxed">{venue.desc}</p>
+                   <button className="mt-8 flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all uppercase tracking-widest text-xs">
+                     View Floor Plan <Navigation className="w-4 h-4" />
+                   </button>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
