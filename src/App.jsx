@@ -22,6 +22,7 @@ import SessionChairs from "@/pages/SessionChairs";
 import Awards from "@/pages/Awards";
 
 import keynoteRegistrationPage from "./pages/KeynoteSpeakerRegistration";
+import Exebitors from "./pages/Exebeters";
 
 // Scroll to top on route change
 function ScrollToTop() {
@@ -70,6 +71,7 @@ function Router() {
       <Route path="/session-chairs" component={SessionChairs} />
       <Route path="/awards" component={Awards} />
       <Route path="/speakers/registratioin" component={keynoteRegistrationPage} />
+      <Route path="/exibitors" component={Exebitors} />
       <Route component={NotFound} />
     </Switch>
   );

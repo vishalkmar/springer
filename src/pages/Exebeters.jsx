@@ -1,8 +1,8 @@
-import KeynoteRegistrationForm from "../components/KynoteRegistrationForm";
+import ExhibitorsData from "../components/ExibitorsData";
 
-export default function keynoteRegistrationPage(){
+export default function Exebitors(){
 
-     return (<>
+     return(<>
      
            <section className="relative overflow-hidden py-16 sm:py-20 bg-[#11b3d4] text-white">
           {/* soft gradient + glow */}
@@ -16,12 +16,11 @@ export default function keynoteRegistrationPage(){
             {/* Title */}
             <div className="text-center">
               <p className="inline-flex items-center rounded-full bg-white/15 px-4 py-2 text-[11px] sm:text-xs font-bold tracking-widest ring-1 ring-white/25">
-                Keynote Speakers Registration
+                Our Sponsors / Exhibitors
               </p>
 
               <h1 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-wide leading-tight uppercase text-white">
-                Keynotes Spearkers Registration
-
+               Our Sponsors / Exhibitors
               </h1>
 
             </div>
@@ -39,6 +38,8 @@ export default function keynoteRegistrationPage(){
           </div>
         </section>
 
-      <KeynoteRegistrationForm/>
+
+  <ExhibitorsData/>
+
      </>)
 }

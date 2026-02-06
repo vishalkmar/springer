@@ -29,14 +29,15 @@ export function Navbar() {
       ],
     },
    
-    {
-      label: "Submission",
-      href: "/submission",
-      children: [
-        { label: "Submission Guidelines", href: "/submission" },
-        { label: "Awards", href: "/submission/awards" },
-      ],
-    },
+    // {
+    //   label: "Submission",
+    //   href: "/submission",
+    //   children: [
+    //     { label: "Submission Guidelines", href: "/submission" },
+    //     { label: "Awards", href: "/submission/awards" },
+    //   ],
+    // },
+      { label: "Exibitors", href: "/exibitors" },
     { label: "Session Chairs", href: "/session-chairs" },
     // {
     //   label: "Program",
