@@ -31,23 +31,24 @@ export default function Home() {
             transition={{ duration: 0.8 }}
           >
             <div className="inline-block px-4 py-1 border border-white/30 bg-white/10 backdrop-blur-sm rounded-full mb-6">
-              <span className="uppercase tracking-widest text-sm font-semibold">IPEE 2026</span>
+              <span className="uppercase tracking-widest text-sm font-semibold"></span>
             </div>
             
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-display leading-tight text-white mb-6 drop-shadow-lg">
-              2026 2nd International Power and <br className="hidden md:block"/>
-              <span className="text-[hsl(var(--accent))]">Electrical Engineering</span> Conference
+             International Conference on Smart Cyber-Physical <br className="hidden md:block"/>
+              <span className="text-[hsl(var(--accent))]">Systems and Intelligent Analytics
+</span> 
             </h1>
             
             <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 text-lg md:text-xl font-light mb-10">
               <div className="flex items-center gap-2">
                 <MapPin className="text-[hsl(var(--accent))]" />
-                <span>Penang, Malaysia</span>
+                <span>India International Centre, Lodhi Estate, New Delhi, India</span>
               </div>
               <div className="hidden md:block w-px h-6 bg-white/30" />
               <div className="flex items-center gap-2">
                 <Calendar className="text-[hsl(var(--accent))]" />
-                <span>July 14-17, 2026</span>
+                <span>2–3 July 2026</span>
               </div>
             </div>
 
@@ -58,7 +59,7 @@ export default function Home() {
                 </Button>
               </Link>
               <Link href="/contact">
-                <Button variant="outline" size="lg" className="w-full sm:w-auto border-white text-white hover:bg-white hover:text-primary">
+                <Button variant="outline" size="lg" className="w-full sm:w-auto border-white text-white hover:bg-[#0088d1] hover:text-white">
                   Contact Us
                 </Button>
               </Link>
@@ -295,7 +296,7 @@ export default function Home() {
       {/* Venue Section Heading */}
       <section className="py-12 bg-white text-center border-t border-slate-200">
         <h2 className="text-3xl md:text-4xl font-bold text-[#1eb2fc]">Conference Venue</h2>
-        <p className="mt-3 text-gray-600 max-w-2xl mx-auto">Discover the location and facilities of IPEE 2026</p>
+        <p className="mt-3 text-gray-600 max-w-2xl mx-auto">Discover the location and facilities of ICSCPSIA 2026 </p>
       </section>
 
       <VenueCard />
