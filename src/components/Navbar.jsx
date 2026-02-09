@@ -13,11 +13,15 @@ export function Navbar() {
   const navLinks = [
     { label: "Home", href: "/" },
     {
-      label: "Committee",
-      href: "/committee",
+      label: "Conference ",
+      href: "/conference",
       children: [
-        { label: "Organizing Committee", href: "/committee" },
-        { label: "TPC Member", href: "/committee/tpc" },
+        { label: "About Conference", href: "/about/conference" },
+        { label: "Submit your Papers", href: "papers" },
+         { label: "Conference Agenda", href: "/conference/agenda" },
+        { label: "Review Expression", href: "/review" },
+         { label: "FAQs", href: "/faqs" },
+        
       ],
     },
     {

@@ -24,6 +24,12 @@ import Awards from "@/pages/Awards";
 import keynoteRegistrationPage from "./pages/KeynoteSpeakerRegistration";
 import Exebitors from "./pages/Exebeters";
 
+import Agenda from "./pages/Agenda";
+import AboutConference from "@/pages/AboutConference";
+import Faqs from "./pages/Faqs";
+import Review from "@/pages/Review";
+import Papers from "./pages/Paper";
+
 // Scroll to top on route change
 function ScrollToTop() {
   const [pathname] = useLocation();
@@ -72,6 +78,13 @@ function Router() {
       <Route path="/awards" component={Awards} />
       <Route path="/speakers/registratioin" component={keynoteRegistrationPage} />
       <Route path="/exibitors" component={Exebitors} />
+      <Route path="/conference/agenda" component={Agenda} />
+      <Route path="/conference" component={AboutConference} />
+      <Route path="/about/conference" component={AboutConference} />
+      <Route path="papers" component={Papers} />
+      <Route path="/review" component={Review} />
+      <Route path="/faqs" component={Faqs} />
+      
       <Route component={NotFound} />
     </Switch>
   );
