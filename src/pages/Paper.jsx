@@ -23,7 +23,7 @@ export default function Papers(){
                 SUBMIT YOUR PAPERS
 
               </h1>
-              <p>If you are facing any issues while submitting your paper, please email your paper to info@iccict.org along with all the required details mentioned below.</p>
+              <p>If you are facing any issues while submitting your paper, please email your paper to info@icscpsia.org along with all the required details mentioned below.</p>
 
             </div>
 

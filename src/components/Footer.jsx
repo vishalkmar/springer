@@ -11,9 +11,9 @@ export function Footer() {
         <div className="max-w-7xl mx-auto px-4 h-full flex flex-col md:flex-row items-center justify-between gap-6 relative z-10">
           <div className="text-center md:text-left">
             <h2 className="text-2xl md:text-3xl font-bold text-black font-display flex items-center gap-3 justify-center md:justify-start">
-              <UserCheck className="text-[#1eb2fc]" /> Ready to join us in Penang?
+              <UserCheck className="text-[#1eb2fc]" /> Ready to be part of ICSCPSIA 2026?
             </h2>
-            <p className="text-[#1eb2fc] text-sm md:text-base mt-1">Secure your spot at IPEE 2026 and be part of the future of power engineering.</p>
+            <p className="text-[#1eb2fc] text-sm md:text-base mt-1">Join the global research community and contribute to the future of intelligent cyber-physical systems and analytics.</p>
           </div>
           <Link href="/registration">
             <button className="px-10 py-4 bg-[#1eb2fc] text-white font-bold rounded-full shadow-2xl hover:scale-105 hover:shadow-[#1eb2fc]/30 transition-all flex items-center gap-2 uppercase tracking-widest text-xs whitespace-nowrap">
@@ -34,24 +34,27 @@ export function Footer() {
                   IP
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold leading-none">IPEE 2026</h3>
-                  <p className="text-xs text-white/80 mt-1">International Power & Electrical Engineering</p>
+                  <h3 className="text-xl font-bold leading-none">ICSCPSIA </h3>
+                  <p className="text-xs text-white/80 mt-1">International Conference on Smart Cyber-Physical Systems and Intelligent Analytics
+</p>
                 </div>
               </div>
               <p className="text-white text-sm leading-relaxed mb-6">
-                A premier international platform for researchers, practitioners, and educators to present and discuss the most recent innovations, trends, and concerns in the fields of Power and Electrical Engineering.
-              </p>
+               The International Conference on Smart Cyber-Physical Systems and Intelligent Analytics (ICSCPSIA 2026) is a premier international forum uniting researchers, academicians, and industry experts working at the intersection of intelligent systems, analytics, and cyber-physical integration. </p>
             </div>
 
             {/* Column 2: Quick Links */}
             <div>
               <h3 className="text-lg font-bold mb-6 text-white border-b border-white/20 pb-2 inline-block">Quick Links</h3>
               <ul className="space-y-3 text-sm text-white/90">
-                <li><Link href="/cfp" className="hover:text-white transition-colors flex items-center gap-2">Call for Papers</Link></li>
-                <li><Link href="/committee" className="hover:text-white transition-colors flex items-center gap-2">Committee Members</Link></li>
-                <li><Link href="/submission" className="hover:text-white transition-colors flex items-center gap-2">Submission Guide</Link></li>
+                <li><Link href="/" className="hover:text-white transition-colors flex items-center gap-2">Home</Link></li>
+                <li><Link href="/about/conference" className="hover:text-white transition-colors flex items-center gap-2">About</Link></li>
+                <li><Link href="/conference/agenda" className="hover:text-white transition-colors flex items-center gap-2">Agenda</Link></li>
+                <li><Link href="/speakers" className="hover:text-white transition-colors flex items-center gap-2">Speakers</Link></li>
+                <li><Link href="/program" className="hover:text-white transition-colors flex items-center gap-2">Program</Link></li>
                 <li><Link href="/registration" className="hover:text-white transition-colors flex items-center gap-2">Registration</Link></li>
-                <li><Link href="/program" className="hover:text-white transition-colors flex items-center gap-2">Conference Program</Link></li>
+                <li><Link href="/submission" className="hover:text-white transition-colors flex items-center gap-2">Submit Paper</Link></li>
+                <li><Link href="/contact" className="hover:text-white transition-colors flex items-center gap-2">Contact</Link></li>
               </ul>
             </div>
 
@@ -62,18 +65,19 @@ export function Footer() {
                 <div className="flex items-start gap-3">
                   <Mail className="w-5 h-5 text-[hsl(var(--accent))] shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-medium text-white">Conference Secretary: Amy Hu</p>
-                    <a href="mailto:ipee_conf@126.com" className="hover:text-white transition-colors">ipee_conf@126.com</a>
+                    <p className="font-medium text-white"> info@ICSCPSIA.org</p>
+                    {/* <a href="mailto:ipee_conf@126.com" className="hover:text-white transition-colors">ipee_conf@126.com</a> */}
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-[hsl(var(--accent))] shrink-0 mt-0.5" />
-                  <p className="text-white/90">Penang, Malaysia</p>
+                  <p className="text-white/90">India International Centre, Lodhi Estate, New Delhi, India
+</p>
                 </div>
-                <div className="flex items-start gap-3">
+                {/* <div className="flex items-start gap-3">
                   <Globe className="w-5 h-5 text-[hsl(var(--accent))] shrink-0 mt-0.5" />
-                  <a href="https://ipee.net" className="hover:text-white transition-colors">www.ipee.net</a>
-                </div>
+                  <a href="https://ipee.net" className="hover:text-white transition-colors">www..net</a>
+                </div> */}
               </div>
             </div>
 
@@ -82,16 +86,16 @@ export function Footer() {
               <h3 className="text-lg font-bold mb-6 text-white border-b border-white/20 pb-2 inline-block">Important Dates</h3>
               <ul className="space-y-4 text-sm">
                 <li className="flex gap-4">
-                  <div className="bg-white/10 rounded px-2 py-1 text-center min-w-[50px]">
+                  {/* <div className="bg-white/10 rounded px-2 py-1 text-center min-w-[50px]">
                     <span className="block text-xs uppercase text-white/80">Feb</span>
                     <span className="block text-lg font-bold text-[hsl(var(--accent))]">20</span>
-                  </div>
+                  </div> */}
                   <div>
-                    <p className="font-medium text-white">Abstract Submission</p>
-                    <p className="text-xs text-white/70">Deadline for first round</p>
+                    <p className="font-medium text-white">To be Announced</p>
+                    {/* <p className="text-xs text-white/70">Deadline for first round</p> */}
                   </div>
                 </li>
-                <li className="flex gap-4">
+                {/* <li className="flex gap-4">
                   <div className="bg-white/10 rounded px-2 py-1 text-center min-w-[50px]">
                     <span className="block text-xs uppercase text-white/80">Mar</span>
                     <span className="block text-lg font-bold text-[hsl(var(--accent))]">15</span>
@@ -110,13 +114,15 @@ export function Footer() {
                     <p className="font-medium text-white">Conference Day</p>
                     <p className="text-xs text-white/70">Opening ceremony</p>
                   </div>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
 
           <div className="pt-8 border-t border-white/20 text-center text-sm text-white/70">
-            <p>© 2026 2nd International Power and Electrical Engineering Conference (IPEE 2026). All Rights Reserved.</p>
+            <p>International Conference on Smart Cyber-Physical Systems and Intelligent Analytics
+(ICSCPSIA 2026)
+. All Rights Reserved.</p>
           </div>
         </div>
       </footer>

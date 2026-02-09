@@ -29,7 +29,7 @@ export default function PaperSubmitForm() {
   const THEME = "#11b3d4";
 
   // --- Options (edit as needed)
-  const CONFERENCES = useMemo(() => ["ICCICT 2026", "ICSCPSIA 2026"], []);
+  const CONFERENCES = useMemo(() => ["ICSCPSIA", "ICSCPSIA"], []);
   const VENUES = useMemo(
     () => [
       "India International Centre, Lodhi Estate, New Delhi, India (22–23 January 2026)",
@@ -168,7 +168,7 @@ export default function PaperSubmitForm() {
   // --- Form state
   const [form, setForm] = useState({
     // Conference Info
-    conference: "ICCICT 2026",
+    conference: "ICSCPSIA",
     venueDate: VENUES[0],
 
     // Title & Abstract
@@ -915,7 +915,7 @@ export default function PaperSubmitForm() {
             <Section icon={ShieldCheck} title="Agreement to Terms" subtitle="All items below are required">
               <div className="space-y-4">
                 {[
-                  { k: "policies", t: "I agree to the submission policies, deadlines, and formatting rules of ICCICT 2026." },
+                  { k: "policies", t: "I agree to the submission policies, deadlines, and formatting rules of ICSCPSIA." },
                   { k: "present", t: "I confirm that if accepted, at least one author will present the paper at the conference." },
                   { k: "copyright", t: "I agree to the publication terms and copyright transfer if the paper is accepted." },
                   { k: "peerReview", t: "I understand that my paper will undergo peer review and I agree to address reviewer comments if requested." },

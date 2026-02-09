@@ -1,9 +1,9 @@
 import React from "react";
 
 /**
- * ICCICT Showcase (3-in-1)
+ * ICSCPSIA Showcase (3-in-1)
  * Layout order:
- * 1) About ICCICT 2026 (image left + content right + small gallery + CTA)
+ * 1) About ICSCPSIA (image left + content right + small gallery + CTA)
  * 2) Agenda (left intro + right image + timeline day-wise)
  * 3) Submit Your Papers (3 feature cards + big CTA strip)
  *
@@ -15,13 +15,13 @@ export default function ConferenceDetails() {
   const accent = "#11b3d4";
 
   const about = {
-    title: "About ICCICT 2026",
+    title: "About ICSCPSIA",
     subtitle:
-      "Welcome to the International Conference on Computational Intelligence and Computing Technologies & AI (ICCICT 2026)",
+      "Welcome to the International Conference on Computational Intelligence and Computing Technologies & AI (ICSCPSIA)",
     body: [
-      "Set to unfold from January 22–23, 2026, ICCICT 2026 offers a platform to present groundbreaking research, publish your papers, showcase your ideas through engaging poster presentations, and establish global partnerships.",
+      "Set to unfold from January 22–23, 2026, ICSCPSIA offers a platform to present groundbreaking research, publish your papers, showcase your ideas through engaging poster presentations, and establish global partnerships.",
       "Our conference draws a vibrant audience, including researchers, scholars, academicians, industry professionals, exhibitors, and enthusiasts, all converging to exchange ideas and insights across the vast landscape of diverse yet interconnected fields.",
-      "Under the theme “Bridging Disciplines, Inspiring Innovation”, ICCICT 2026 provides a dynamic convergence of knowledge, research, and industry expertise. Participants will have the opportunity to present groundbreaking research and publish their work in the CPS–IEEE Explore Digital Library as part of the conference proceedings.",
+      "Under the theme \"Bridging Disciplines, Inspiring Innovation\", ICSCPSIA provides a dynamic convergence of knowledge, research, and industry expertise. Participants will have the opportunity to present groundbreaking research and publish their work in the CPS–IEEE Explore Digital Library as part of the conference proceedings.",
     ],
     primaryCta: { label: "Register Now", href: "/registration" },
     images: {
@@ -36,7 +36,7 @@ export default function ConferenceDetails() {
 
   const agenda = {
     heading: "Agenda",
-    kicker: "ICCICT 2026: Where AI, ML, IoT & Computer Science Converge",
+    kicker: "ICSCPSIA: Where AI, ML, IoT & Computer Science Converge",
     intro:
       "Join us on 22–23 January 2026 at India International Centre, Lodhi Estate, New Delhi, India for a transformative conference exploring the latest advancements in AI, ML, IoT, and computer science.",
     ctas: [
@@ -101,7 +101,7 @@ export default function ConferenceDetails() {
 
   const submit = {
     title: "Submit Your Papers",
-    subtitle: "ICCICT 2026: Advancing Research in AI, ML, IoT, and Computer Science",
+    subtitle: "ICSCPSIA: Advancing Research in AI, ML, IoT, and Computer Science",
     cards: [
       {
         title: "Submit Original Research",
@@ -117,7 +117,7 @@ export default function ConferenceDetails() {
       },
     ],
     strip: {
-      title: "Share Your Expertise at ICCICT 2026",
+      title: "Share Your Expertise at ICSCPSIA",
       desc: "Submit your research and join leading scholars and industry professionals from around the world.",
       cta: { label: "Submit Your Papers", href: "/submission" },
       avatar:
@@ -154,7 +154,7 @@ export default function ConferenceDetails() {
               <div className="rounded-3xl overflow-hidden ring-1 ring-blue-200 shadow-2xl">
                 <img
                   src={about.images.hero}
-                  alt="ICCICT"
+                  alt="ICSCPSIA"
                   className="w-full h-[280px] sm:h-[360px] object-cover"
                   loading="lazy"
                 />

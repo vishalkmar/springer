@@ -744,7 +744,7 @@ export default function KeynoteRegistrationForm() {
                     style={{ accentColor: THEME }}
                   />
                   <p className="text-sm text-slate-700">
-                    I agree to receive updates and marketing communications about ICCICT and related events.
+                    I agree to receive updates and marketing communications about ICSCPSIA and related events.
                   </p>
                 </div>
               </div>

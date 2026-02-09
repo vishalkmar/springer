@@ -25,23 +25,23 @@ export default function ExhibitorsData() {
     {
       name: "Traveon Ventures LLP",
       role: "Organizer",
-      logo: "https://iccict.org/assets/img/sponsors_logo/traveon.svg",
+      logo: "https://icscpsia.org/assets/img/sponsors_logo/traveon.svg",
     },
     {
       name: "India International Centre",
       role: "Host",
-      logo: "https://iccict.org/assets/img/sponsors_logo/iic.jpg",
+      logo: "https://icscpsia.org/assets/img/sponsors_logo/iic.jpg",
     },
     {
       name: "Dr. Bhim Rao Ambedkar College",
       role: "Partner",
-      logo: "https://iccict.org/assets/img/sponsors_logo/DBARC.png",
+      logo: "https://icscpsia.org/assets/img/sponsors_logo/DBARC.png",
     },
   ];
 
   const SPONSORS = [
-    { name: "Mochly.com", role: "Sponsor", logo: "https://iccict.org/assets/img/sponsors_logo/mooshly.png" },
-    { name: "EGS Group", role: "Sponsor", logo: "https://iccict.org/assets/img/sponsors_logo/egs.jpg" },
+    { name: "Mochly.com", role: "Sponsor", logo: "https://icscpsia.org/assets/img/sponsors_logo/mooshly.png" },
+    { name: "EGS Group", role: "Sponsor", logo: "https://icscpsia.org/assets/img/sponsors_logo/egs.jpg" },
   ];
 
   const WHY = [

@@ -80,11 +80,9 @@ export function Navbar() {
             </div>
             <div className="flex flex-col">
               <span className="font-bold text-xl tracking-tight leading-none">
-                ICSCPSIA 2026 
+                ICSCPSIA
               </span>
-              <span className="text-xs text-white font-light">
-                Power & Electrical Engineering
-              </span>
+              
             </div>
           </WouterLink>
 

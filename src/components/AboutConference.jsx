@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutConferenceSection() {
   const dates = [
-    { label: "Submit Your Papers", value: "October 15, 2025" },
+    { label: "Submit Your Papers", value: "To Be Announced." },
     // { label: "Last Date of Paper Submission", value: "December 25, 2025" },
     // { label: "Notification of Acceptance", value: "January 05, 2026" },
     // { label: "Last Date for Camera Ready", value: "January 10, 2026" },
@@ -19,7 +19,7 @@ export default function AboutConferenceSection() {
             About the Conference
           </h2>
           <p className="mx-auto mt-2 max-w-2xl text-sm text-slate-600">
-            Discover the vision, purpose, and key milestones of  ICSCPSIA 2026.
+            Discover the vision, purpose, and key milestones of  ICSCPSIA.
           </p>
         </div>
 
@@ -43,20 +43,24 @@ export default function AboutConferenceSection() {
           <div className="lg:col-span-5">
             <div className="h-full rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200 sm:p-7">
               <p className="inline-flex rounded-full bg-[#42a1f5]/10 px-3 py-1 text-xs font-semibold text-[#42a1f5]">
-              ICSCPSIA 2026
+              ICSCPSIA
               </p>
 
               <h3 className="mt-4 text-lg font-semibold text-slate-900 sm:text-xl">
-               International Conference on Smart Cyber-Physical Systems and Intelligent Analytics
+             Be Part of a Leading Global Research Forum in 2026
+
               </h3>
+               <p>
+                 The International Conference on Smart Cyber-Physical Systems and Intelligent Analytics (ICSCPSIA 2026) is a premier international forum uniting researchers, academicians, and industry experts working at the intersection of intelligent systems, analytics, and cyber-physical integration.
+
+                </p>
 
               <div className="mt-3 space-y-3 text-sm leading-relaxed text-slate-600">
                 <p>
-                  The conference aims to promote interdisciplinary collaboration by connecting theoretical research with real-world applications across domains such as smart grids, robotics, aerospace, healthcare, manufacturing, and intelligent infrastructure.
+                 The conference offers a high-quality platform for presenting innovative research, exchanging advanced ideas, and building collaborations that address complex challenges in next-generation smart and autonomous systems.
                 </p>
                 <p>
-                  It brings together the global research community to share innovations, foster collaboration, and shape the future of intelligent and resilient cyber-physical systems.
-                </p>
+                 With strong international participation anticipated, ICSCPSIA 2026 is set to deliver an intellectually stimulating and globally connected academic experience.</p>
                 
               </div>
 
@@ -92,7 +96,8 @@ export default function AboutConferenceSection() {
                   <div>
                     <p className="text-sm font-semibold text-slate-900">Theme Focus</p>
                     <p className="text-sm text-slate-600">
-                      Computational Intelligence • AI • ML • Data Science • Emerging Computing
+                     Smart Cyber-Physical Systems • Intelligent Analytics • Artificial Intelligence • Machine Learning • Data-Driven System Design
+
                     </p>
                   </div>
                 </div>
@@ -206,7 +211,8 @@ export default function AboutConferenceSection() {
             <div className="mt-5 grid gap-3 sm:grid-cols-2">
               <div className="rounded-xl bg-white p-4 ring-1 ring-slate-200">
                 <p className="text-xs font-semibold text-slate-500">Dates</p>
-                <p className="mt-1 text-sm font-semibold text-slate-900">22-23 Jan, 2026</p>
+                <p className="mt-1 text-sm font-semibold text-slate-900">2–3 July 2026
+</p>
               </div>
               <div className="rounded-xl bg-white p-4 ring-1 ring-slate-200">
                 <p className="text-xs font-semibold text-slate-500">Timings</p>

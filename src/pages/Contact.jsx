@@ -51,7 +51,7 @@ export default function Contact() {
                   </div>
                   <div className="min-w-0">
                     <h4 className="text-lg font-semibold text-slate-900">Email Inquiries</h4>
-                    <p className="mt-1 font-medium text-[#42a1f5]">info@iccict.org</p>
+                    <p className="mt-1 font-medium text-[#42a1f5]">info@ICSCPSIA.org</p>
                     <p className="mt-1 text-sm text-slate-500">Typical response within 24 hours</p>
                   </div>
                 </div>
@@ -63,9 +63,10 @@ export default function Contact() {
                   </div>
                   <div className="min-w-0">
                     <h4 className="text-lg font-semibold text-slate-900">Phone Support</h4>
-                    <p className="mt-1 font-medium text-[#42a1f5]">+60 4-123 4567</p>
+                    <p className="mt-1 font-medium text-[#42a1f5]">+8199050507</p>
                     <p className="mt-1 text-sm text-slate-500">
-                      Mon - Fri, 9:00 AM - 5:00 PM (MYT)
+                     Mon - Fri, 10:00 AM - 6:00 PM (IST)
+
                     </p>
                   </div>
                 </div>
@@ -80,7 +81,8 @@ export default function Contact() {
                       Conference Secretariat
                     </h4>
                     <p className="mt-1 text-slate-600">
-                      Universiti Sains Malaysia, Penang, Malaysia
+                      India International Centre, Lodhi Estate, New Delhi, India
+
                     </p>
                   </div>
                 </div>

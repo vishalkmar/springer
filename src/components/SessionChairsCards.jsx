@@ -82,7 +82,7 @@ function SessionChairCard({ chair }) {
         {/* badges row */}
         <div className="flex items-center justify-between">
           <span className="inline-flex items-center rounded-full bg-[#42a1f5]/10 px-3 py-1 text-[11px] font-bold tracking-widest text-[#42a1f5] ring-1 ring-[#42a1f5]/20">
-            SESSION CHAIR
+            Conference Chairs
           </span>
 
           {chair.verified ? (
@@ -130,8 +130,8 @@ function SessionChairCard({ chair }) {
 }
 
 export default function SessionChairsSection({
-  title = "Session Chairs",
-  subtitle = "Confirmed academic leaders supporting the conference sessions.",
+  title = "Conference Chairs",
+  subtitle = " Distinguished academic leaders guiding the vision, quality, and direction of the conference.",
   chairs = CHAIRS,
 }) {
   return (
