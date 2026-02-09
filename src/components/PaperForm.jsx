@@ -29,10 +29,9 @@ export default function PaperSubmitForm() {
   const THEME = "#11b3d4";
 
   // --- Options (edit as needed)
-  const CONFERENCES = useMemo(() => ["ICSCPSIA", "ICSCPSIA"], []);
+  const CONFERENCES = useMemo(() => ["ICSCPSIA"], []);
   const VENUES = useMemo(
     () => [
-      "India International Centre, Lodhi Estate, New Delhi, India (22–23 January 2026)",
       "Tentative: 2–3 July 2026 (Venue to be announced)",
     ],
     []
@@ -408,7 +407,7 @@ export default function PaperSubmitForm() {
         <div className="rounded-3xl bg-white border border-slate-200 shadow-xl overflow-hidden">
           {/* Header */}
           <div className="px-6 sm:px-8 py-6 border-b border-slate-200">
-            <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900">
+            <h2 className="text-xl sm:text-2xl font-extrabold text-[#0aaff0]">
               Online Paper Submission
             </h2>
             <p className="mt-2 text-sm text-slate-600">

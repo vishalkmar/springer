@@ -70,7 +70,7 @@ export default function Agenda(){
             "linear-gradient(180deg, rgba(17,179,212,1) 0%, rgba(15,160,195,1) 70%, rgba(15,160,195,1) 100%)",
         }}
       >
-        <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight">
+        <h2 className="text-3xl sm:text-4xl font-extrabold  text-white">
           Agenda
         </h2>
         <p className="mt-3 text-white/90 text-sm sm:text-base">
@@ -83,8 +83,8 @@ export default function Agenda(){
         {/* Day 1 */}
         <div className="space-y-4">
           <div className="flex items-center justify-between gap-3">
-            <h3 className="text-sm sm:text-base font-extrabold text-slate-900 uppercase tracking-widest">
-              January 22, 2026
+            <h3 className="text-sm text-[#0aaff0] sm:text-base font-extrabold text-slate-900 uppercase tracking-widest">
+              July 2, 2026
             </h3>
             <span
               className="hidden sm:inline-flex items-center rounded-full px-3 py-1 text-xs font-extrabold"
@@ -145,8 +145,8 @@ export default function Agenda(){
         {/* Day 2 */}
         <div className="space-y-4">
           <div className="flex items-center justify-between gap-3">
-            <h3 className="text-sm sm:text-base font-extrabold text-slate-900 uppercase tracking-widest">
-              January 23, 2026
+            <h3 className="text-sm text-[#0aaff0] sm:text-base font-extrabold text-slate-900 uppercase tracking-widest">
+              July 3, 2026
             </h3>
             <span
               className="hidden sm:inline-flex items-center rounded-full px-3 py-1 text-xs font-extrabold"

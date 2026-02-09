@@ -12,19 +12,21 @@ import { Loader2, Upload, CheckCircle2, AlertCircle } from "lucide-react";
 export default function AwardNominationForm() {
   const THEME = "#11b3d4";
 
-  const categories = useMemo(
-    () => [
-      "Best Research Innovation Award",
-      "Excellence in Academic Leadership",
-      "Outstanding Scientist / Researcher Award",
-      "Young Researcher Award",
-      "Women in Research Excellence",
-      "Industry Innovation & Impact Award",
-      "Lifetime Achievement Award",
-      "Best Publication / Patent Award",
-    ],
-    []
-  );
+const categories = useMemo(
+  () => [
+    "Research Excellence Awards",
+    "Teaching & Academic Excellence Awards",
+    "Student Achievement Awards",
+    "Institutional & Leadership Excellence Awards",
+    "Social Impact & Professional Contribution Awards",
+    "Technology & Digital Transformation Awards",
+    "International Collaboration & Global Impact Awards",
+    "Diversity, Inclusion & Capacity Building Awards",
+    "Women in Research & Education Excellence Award",
+  ],
+  []
+);
+
 
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);

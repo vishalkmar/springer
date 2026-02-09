@@ -41,7 +41,7 @@ export function Navbar() {
     //     { label: "Awards", href: "/submission/awards" },
     //   ],
     // },
-      { label: "Exibitors", href: "/exibitors" },
+      { label: "Exhibitor", href: "/exibitors" },
     { label: "Session Chairs", href: "/session-chairs" },
     // {
     //   label: "Program",

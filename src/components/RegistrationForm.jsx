@@ -29,7 +29,7 @@ export default function RegistrationFormSection() {
 
   const [form, setForm] = useState({
     category: "Student - Abstract Presentation",
-    registrationFee: "USD 400",
+    registrationFee: "",
     firstName: "",
     lastName: "",
     email: "",
@@ -46,10 +46,10 @@ export default function RegistrationFormSection() {
 
   const categories = useMemo(
     () => [
-      { label: "Student - Abstract Presentation", fee: "USD 400" },
-      { label: "Regular - Abstract Presentation", fee: "USD 500" },
-      { label: "Non-Member - Abstract Presentation", fee: "USD 600" },
-      { label: "Listener / Attendee", fee: "USD 250" },
+      { label: "To be announced", fee: "To be announced" },
+      // { label: "Regular - Abstract Presentation", fee: "USD 500" },
+      // { label: "Non-Member - Abstract Presentation", fee: "USD 600" },
+      // { label: "Listener / Attendee", fee: "USD 250" },
     ],
     []
   );

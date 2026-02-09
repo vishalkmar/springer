@@ -45,7 +45,7 @@ export default function Papers(){
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     {/* Heading */}
     <div className="text-center mb-10">
-      <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">
+      <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0aaff0]">
         Paper Submission Guidelines
       </h2>
       <div className="mt-3 flex justify-center">
@@ -141,13 +141,13 @@ export default function Papers(){
             <div className="flex items-start gap-4">
               <div
                 className="h-11 w-11 rounded-xl flex items-center justify-center text-lg shrink-0"
-                style={{ backgroundColor: "rgba(17,179,212,0.14)" }}
+                style={{ backgroundColor: "rgba(9, 151, 169, 0.14)" }}
               >
                 <span>{item.icon}</span>
               </div>
 
               <div className="min-w-0">
-                <h3 className="text-base sm:text-lg font-extrabold text-slate-900 group-hover:text-slate-950">
+                <h3 className="text-base sm:text-lg font-extrabold text-[#0aaff0] group-hover:text-slate-950">
                   {item.title}
                 </h3>
                 <p className="mt-2 text-sm text-slate-600 leading-relaxed">

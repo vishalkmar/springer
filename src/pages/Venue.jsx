@@ -4,11 +4,11 @@ export default function VenueCard() {
   const data = {
     title: "India International\nCentre",
     date: "2–3 July 2026",
-    timings: "Mon - Fri, 10:00 AM - 6:00 PM (IST)",
+    timings: "Mon - Fri, 9:00 AM - 5:00 PM (IST)",
     location: "India International Centre, Lodhi Estate, New Delhi, India",
     mapUrl: "https://maps.google.com/?q=India%20International%20Centre%20Lodhi%20Estate%20New%20Delhi",
     imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUtes3mKnDBpVZCIHY_hA-mOvlYioDHBgXhA&s", // replace with your image if needed
+      "https://iccict.org/assets/img/brand/muc-2-min.jpg", // replace with your image if needed
   };
 
   return (

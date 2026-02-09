@@ -46,7 +46,7 @@ function ChairAvatar({ src, name }) {
         <img
           src={src}
           alt={name}
-          className="h-56 w-full object-cover"
+          className="h-56 w-full object-contain"
           loading="lazy"
         />
       ) : (
@@ -69,65 +69,51 @@ function SessionChairCard({ chair }) {
 
   return (
     <div className="group relative overflow-hidden rounded-3xl bg-white shadow-sm ring-1 ring-slate-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-[#42a1f5]/40">
-      {/* Top theme line */}
+      {/* top theme line */}
       <div className="h-1.5 w-full bg-gradient-to-r from-[#42a1f5] via-[#42a1f5]/70 to-[#42a1f5]/30" />
 
-      {/* Image */}
-      <div className="overflow-hidden rounded-t-3xl">
-        <ChairAvatar src={chair.image} name={chair.name} />
-      </div>
+      {/* image */}
+      <ChairAvatar src={chair.image} name={chair.name} />
 
-      {/* Content */}
-      <div className="p-6 flex flex-col min-h-[260px]">
-        {/* badges row */}
-        <div className="flex items-center justify-between">
-          <span className="inline-flex items-center rounded-full bg-[#42a1f5]/10 px-3 py-1 text-[11px] font-bold tracking-widest text-[#42a1f5] ring-1 ring-[#42a1f5]/20">
-            Conference Chairs
-          </span>
-
-          {chair.verified ? (
-            <span className="inline-flex items-center gap-1 rounded-full bg-slate-50 px-2.5 py-1 text-xs font-semibold text-slate-600 ring-1 ring-slate-200">
-              <BadgeCheck className="h-4 w-4 text-[#42a1f5]" />
-              Confirmed
-            </span>
-          ) : null}
-        </div>
-
-        {/* Name */}
-        <h3 className="mt-4 text-xl font-extrabold text-slate-900 leading-snug group-hover:text-[#42a1f5] transition-colors">
+      {/* content */}
+      <div className="p-6 flex flex-col gap-3">
+        {/* name */}
+        <h3 className="text-center text-xl font-extrabold text-slate-900 leading-snug group-hover:text-[#42a1f5] transition-colors">
           {chair.name}
         </h3>
 
         {/* designation */}
-        <p className="mt-3 text-sm leading-relaxed text-slate-600 flex-1">
+        <p className="text-center text-sm leading-relaxed text-slate-600 line-clamp-4">
           {designation}
         </p>
 
         {/* location */}
         {chair.location ? (
-          <div className="mt-4 flex items-center gap-2 text-sm text-slate-500">
+          <div className="mt-1 flex items-center justify-center gap-2 text-sm text-slate-500">
             <MapPin className="h-4 w-4 text-[#42a1f5] shrink-0" />
             <span className="truncate">{chair.location}</span>
           </div>
         ) : null}
 
-        {/* CTA (always visible because flex-1 above pushes button down) */}
+        {/* CTA (gap fix: mt-2 + no extra min-height) */}
         <a
           href={chair.profileUrl || "#"}
           target={chair.profileUrl && chair.profileUrl !== "#" ? "_blank" : undefined}
           rel={chair.profileUrl && chair.profileUrl !== "#" ? "noreferrer" : undefined}
-          className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#42a1f5]/10 px-4 py-4 text-sm font-bold text-[#42a1f5] ring-1 ring-[#42a1f5]/25 transition-all duration-300 hover:bg-[#42a1f5] hover:text-white hover:ring-[#42a1f5]"
+          className="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#42a1f5]/10 px-4 py-3.5 text-sm font-bold text-[#42a1f5] ring-1 ring-[#42a1f5]/25 transition-all duration-300 hover:bg-[#42a1f5] hover:text-white hover:ring-[#42a1f5]"
         >
           View Full Profile
           <ExternalLink className="h-4 w-4" />
         </a>
       </div>
 
-      {/* hover glow border */}
-      <div className="pointer-events-none absolute inset-0 rounded-3xl ring-1 ring-transparent transition-all duration-300 group-hover:ring-[#42a1f5]/25" />
+      {/* hover border glow */}
+      <div className="pointer-events-none absolute inset-0 rounded-3xl ring-1 ring-transparent transition-all duration-300 group-hover:ring-[#42a1f5]/20" />
     </div>
   );
 }
+
+
 
 export default function SessionChairsSection({
   title = "Conference Chairs",

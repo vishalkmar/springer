@@ -100,9 +100,7 @@ export default function Registration() {
         Cyber-Physical Systems and Intelligent Analytics
       </h1>
 
-      <p className="mt-4 text-sm sm:text-base text-white/90 max-w-3xl mx-auto">
-        Advancing smart systems, intelligent analytics, and real-world cyber-physical innovations through global research collaboration.
-      </p>
+      
     </div>
 
     
@@ -129,29 +127,29 @@ export default function Registration() {
 
       <section className="relative">
         {/* soft theme blobs */}
-        <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        {/* <div className="pointer-events-none absolute inset-0 overflow-hidden">
           <div className="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-[#42a1f5]/10 blur-3xl" />
           <div className="absolute -bottom-24 -left-24 h-96 w-96 rounded-full bg-[#42a1f5]/10 blur-3xl" />
-        </div>
+        </div> */}
 
-        <div className="relative max-w-7xl mx-auto px-4 py-20">
-          <SectionHeader
+        <div className="relative max-w-7xl mx-auto px-4 py-2">
+          {/* <SectionHeader
             title="Registration Rates"
             centered
             subtitle="Early Bird Deadline: May 10, 2026"
-          />
+          /> */}
 
           {/* Plans */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12 items-stretch">
+          {/* <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12 items-stretch">
             {plans.map((plan, i) => (
               <div
                 key={i}
                 className="bg-white rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl hover:border-[#42a1f5]/40 transition-all duration-300 overflow-hidden flex flex-col"
               >
-                {/* top bar */}
+                
                 <div className="h-1.5 w-full bg-gradient-to-r from-[#42a1f5] via-[#42a1f5]/70 to-[#42a1f5]/25" />
 
-                {/* header */}
+              
                 <div className="p-8 bg-white border-b border-slate-200">
                   <h3 className="font-extrabold text-slate-900 text-lg mb-4 min-h-[56px] leading-tight">
                     {plan.name}
@@ -173,9 +171,9 @@ export default function Registration() {
                   </div>
                 </div>
 
-                {/* body */}
+              
                 <div className="p-8 flex-1 flex flex-col">
-                  {/* features (fixed height zone so button aligns) */}
+                 
                   <ul className="space-y-3 mb-8">
                     {plan.features.map((feature, idx) => (
                       <li
@@ -189,7 +187,7 @@ export default function Registration() {
                       </li>
                     ))}
 
-                    {/* fillers to make equal height for all cards */}
+                  
                     {Array.from({ length: maxFeatures - plan.features.length }).map((_, k) => (
                       <li key={`f-${k}`} className="invisible flex items-start gap-3 text-sm">
                         filler
@@ -197,8 +195,8 @@ export default function Registration() {
                     ))}
                   </ul>
 
-                  {/* button always at bottom */}
-               {/* <Button
+                 
+               <Button
                      onClick={scrollToForm}
                      className="
                         w-full rounded-2xl py-5
@@ -210,16 +208,16 @@ export default function Registration() {
                      "
                      >
                      Register for this plan
-                     </Button> */}
+                     </Button>
 
 
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
 
           {/* Bank Transfer Details */}
-          <div className="mt-24 max-w-4xl mx-auto rounded-[2rem] border border-slate-200 overflow-hidden shadow-lg bg-white">
+          {/* <div className="mt-24 max-w-4xl mx-auto rounded-[2rem] border border-slate-200 overflow-hidden shadow-lg bg-white">
             <div className="bg-[#42a1f5] p-6 text-white text-center">
               <h3 className="text-xl font-extrabold flex items-center justify-center gap-3">
                 <Building2 className="w-5 h-5" /> Bank Transfer Details
@@ -256,13 +254,11 @@ export default function Registration() {
                 </div>
               </div>
 
-              {/* Example: form placeholder hook (your real form below) */}
-              {/* <div id="registration-form"> ... </div> */}
+              
             </div>
           </div>
 
-          {/* Your form section can remain as-is; handleSubmit is kept for your use */}
-          {/* <form id="registration-form" onSubmit={handleSubmit}>...</form> */}
+           */}
         </div>
       </section>
 
@@ -347,8 +343,7 @@ export default function Registration() {
                 </p>
                 <ul className="list-disc pl-5 space-y-2">
                   <li>
-                    First submit your research paper using the
-                    <span className="font-bold text-primary"> Submit Your Papers</span> form.
+                    First submit your research paper using the form.
                   </li>
                   <li>
                     After paper acceptance, complete this registration form to

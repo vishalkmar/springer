@@ -25,23 +25,17 @@ export default function ExhibitorsData() {
     {
       name: "Traveon Ventures LLP",
       role: "Organizer",
-      logo: "https://icscpsia.org/assets/img/sponsors_logo/traveon.svg",
+      logo: "https://iccict.org/assets/img/sponsors_logo/traveon.svg",
     },
     {
       name: "India International Centre",
-      role: "Host",
-      logo: "https://icscpsia.org/assets/img/sponsors_logo/iic.jpg",
-    },
-    {
-      name: "Dr. Bhim Rao Ambedkar College",
-      role: "Partner",
-      logo: "https://icscpsia.org/assets/img/sponsors_logo/DBARC.png",
+      role: "Host at",
+      logo: "https://iccict.org/assets/img/sponsors_logo/iic.jpg",
     },
   ];
 
   const SPONSORS = [
-    { name: "Mochly.com", role: "Sponsor", logo: "https://icscpsia.org/assets/img/sponsors_logo/mooshly.png" },
-    { name: "EGS Group", role: "Sponsor", logo: "https://icscpsia.org/assets/img/sponsors_logo/egs.jpg" },
+    { name: "EGS Group", role: "Sponsor", logo: "https://iccict.org/assets/img/sponsors_logo/egs.jpg" },
   ];
 
   const WHY = [
@@ -226,7 +220,7 @@ export default function ExhibitorsData() {
 
           <div className="mt-10 flex justify-center">
             <a
-              href="#become-sponsor"
+              href="/become-sponsor"
               className="inline-flex items-center gap-2 rounded-xl px-6 py-3 text-sm font-extrabold text-white shadow-lg transition-all hover:opacity-95"
               style={{
                 backgroundColor: THEME,

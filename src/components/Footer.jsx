@@ -51,9 +51,9 @@ export function Footer() {
                 <li><Link href="/about/conference" className="hover:text-white transition-colors flex items-center gap-2">About</Link></li>
                 <li><Link href="/conference/agenda" className="hover:text-white transition-colors flex items-center gap-2">Agenda</Link></li>
                 <li><Link href="/speakers" className="hover:text-white transition-colors flex items-center gap-2">Speakers</Link></li>
-                <li><Link href="/program" className="hover:text-white transition-colors flex items-center gap-2">Program</Link></li>
+                <li><Link href="/exibitors" className="hover:text-white transition-colors flex items-center gap-2">Exhibitor</Link></li>
                 <li><Link href="/registration" className="hover:text-white transition-colors flex items-center gap-2">Registration</Link></li>
-                <li><Link href="/submission" className="hover:text-white transition-colors flex items-center gap-2">Submit Paper</Link></li>
+                <li><Link href="/papers" className="hover:text-white transition-colors flex items-center gap-2">Submit Paper</Link></li>
                 <li><Link href="/contact" className="hover:text-white transition-colors flex items-center gap-2">Contact</Link></li>
               </ul>
             </div>
@@ -65,14 +65,14 @@ export function Footer() {
                 <div className="flex items-start gap-3">
                   <Mail className="w-5 h-5 text-[hsl(var(--accent))] shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-medium text-white"> info@ICSCPSIA.org</p>
+                    <p className="font-medium text-white">info@ICSCPSIA.org</p>
                     {/* <a href="mailto:ipee_conf@126.com" className="hover:text-white transition-colors">ipee_conf@126.com</a> */}
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-[hsl(var(--accent))] shrink-0 mt-0.5" />
                   <p className="text-white/90">India International Centre, Lodhi Estate, New Delhi, India
-</p>
+                </p>
                 </div>
                 {/* <div className="flex items-start gap-3">
                   <Globe className="w-5 h-5 text-[hsl(var(--accent))] shrink-0 mt-0.5" />
@@ -95,7 +95,8 @@ export function Footer() {
                     {/* <p className="text-xs text-white/70">Deadline for first round</p> */}
                   </div>
                 </li>
-                {/* <li className="flex gap-4">
+                {/* 
+                <li className="flex gap-4">
                   <div className="bg-white/10 rounded px-2 py-1 text-center min-w-[50px]">
                     <span className="block text-xs uppercase text-white/80">Mar</span>
                     <span className="block text-lg font-bold text-[hsl(var(--accent))]">15</span>
@@ -114,7 +115,8 @@ export function Footer() {
                     <p className="font-medium text-white">Conference Day</p>
                     <p className="text-xs text-white/70">Opening ceremony</p>
                   </div>
-                </li> */}
+                </li>
+                 */}
               </ul>
             </div>
           </div>

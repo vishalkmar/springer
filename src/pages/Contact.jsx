@@ -63,9 +63,9 @@ export default function Contact() {
                   </div>
                   <div className="min-w-0">
                     <h4 className="text-lg font-semibold text-slate-900">Phone Support</h4>
-                    <p className="mt-1 font-medium text-[#42a1f5]">+8199050507</p>
+                    <p className="mt-1 font-medium text-[#42a1f5]">+91-8199050507</p>
                     <p className="mt-1 text-sm text-slate-500">
-                     Mon - Fri, 10:00 AM - 6:00 PM (IST)
+                     Mon - Fri, 9:00 AM - 5:00 PM (IST)
 
                     </p>
                   </div>
@@ -78,7 +78,7 @@ export default function Contact() {
                   </div>
                   <div className="min-w-0">
                     <h4 className="text-lg font-semibold text-slate-900">
-                      Conference Secretariat
+                      Conference Location
                     </h4>
                     <p className="mt-1 text-slate-600">
                       India International Centre, Lodhi Estate, New Delhi, India
@@ -133,13 +133,12 @@ export default function Contact() {
                   <label className="ml-1 text-xs font-bold uppercase tracking-widest text-slate-500">
                     Subject
                   </label>
-                  <select className="w-full appearance-none rounded-xl border border-slate-200 bg-slate-50 px-5 py-4 text-slate-900 outline-none transition-all focus:border-[#42a1f5]/50 focus:bg-white focus:ring-2 focus:ring-[#42a1f5]/25">
-                    <option>Registration Inquiry</option>
-                    <option>Speaker Presentation</option>
-                    <option>Paper Submission</option>
-                    <option>Sponsorship</option>
-                    <option>General Question</option>
-                  </select>
+                  <input
+                      required
+                      type="text"
+                     
+                      className="w-full rounded-xl border border-slate-200 bg-slate-50 px-5 py-4 text-slate-900 outline-none transition-all focus:border-[#42a1f5]/50 focus:bg-white focus:ring-2 focus:ring-[#42a1f5]/25"
+                    />
                 </div>
 
                 <div className="space-y-2">

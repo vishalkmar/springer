@@ -7,6 +7,7 @@ import { queryClient } from "./lib/queryClient";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
+
 // Pages
 import Home from "@/pages/Home";
 import Committee from "@/pages/Committee";
@@ -29,6 +30,8 @@ import AboutConference from "@/pages/AboutConference";
 import Faqs from "./pages/Faqs";
 import Review from "@/pages/Review";
 import Papers from "./pages/Paper";
+
+import BecomeSponsor from "@/pages/BecomeSponsor";
 
 // Scroll to top on route change
 function ScrollToTop() {
@@ -84,6 +87,7 @@ function Router() {
       <Route path="/papers" component={Papers} />
       <Route path="/review" component={Review} />
       <Route path="/faqs" component={Faqs} />
+      <Route path="/become-sponsor" component={BecomeSponsor} />
       
       <Route component={NotFound} />
     </Switch>

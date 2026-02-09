@@ -192,7 +192,7 @@ export default function ReviewerSessionChairForm() {
           >
             <div className="flex items-start justify-between gap-4">
               <div>
-                <h2 className="text-xl sm:text-2xl font-extrabold tracking-tight">
+                <h2 className="text-xl sm:text-2xl font-extrabold tracking-tight text-white">
                   Reviewer / Session Chair Details
                 </h2>
                 <p className="mt-1 text-white/90 text-sm">

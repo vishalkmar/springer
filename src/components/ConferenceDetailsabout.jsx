@@ -17,13 +17,16 @@ export default function ConferenceDetails() {
   const about = {
     title: "About ICSCPSIA",
     subtitle:
-      "Welcome to the International Conference on Computational Intelligence and Computing Technologies & AI (ICSCPSIA)",
-    body: [
-      "Set to unfold from January 22–23, 2026, ICSCPSIA offers a platform to present groundbreaking research, publish your papers, showcase your ideas through engaging poster presentations, and establish global partnerships.",
-      "Our conference draws a vibrant audience, including researchers, scholars, academicians, industry professionals, exhibitors, and enthusiasts, all converging to exchange ideas and insights across the vast landscape of diverse yet interconnected fields.",
-      "Under the theme \"Bridging Disciplines, Inspiring Innovation\", ICSCPSIA provides a dynamic convergence of knowledge, research, and industry expertise. Participants will have the opportunity to present groundbreaking research and publish their work in the CPS–IEEE Explore Digital Library as part of the conference proceedings.",
+      "International Conference on Smart Cyber-Physical Systems and Intelligent Analytics(ICSCPSIA 2026)",
+  
+      body: [
+      `Scheduled to take place in July 2026, the International Conference on Smart Cyber-Physical Systems and Intelligent Analytics (ICSCPSIA 2026) offers a premier platform for researchers and practitioners to present original research, share innovative ideas through technical and poster sessions, and build meaningful international collaborations.`,
+      `The conference attracts a diverse and vibrant audience comprising researchers, academicians, scholars, industry professionals, and innovators, fostering rich discussions across interconnected domains of intelligent systems, analytics, and cyber-physical integration.`,
+      `Guided by a strong interdisciplinary vision, ICSCPSIA 2026 serves as a dynamic meeting ground where theory, computation, and real-world system design converge. Participants will have the opportunity to disseminate high-quality research, engage with global experts, and contribute to shaping the future of intelligent, data-driven, and resilient cyber-physical systems.`,
     ],
+    
     primaryCta: { label: "Register Now", href: "/registration" },
+    
     images: {
       hero:
         "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1400&auto=format&fit=crop",
@@ -36,9 +39,9 @@ export default function ConferenceDetails() {
 
   const agenda = {
     heading: "Agenda",
-    kicker: "ICSCPSIA: Where AI, ML, IoT & Computer Science Converge",
+    kicker: "ICSCPSIA 2026: Advancing Intelligent Cyber-Physical Systems & Analytics",
     intro:
-      "Join us on 22–23 January 2026 at India International Centre, Lodhi Estate, New Delhi, India for a transformative conference exploring the latest advancements in AI, ML, IoT, and computer science.",
+      "Join the global research community in July 2026 for a premier international conference exploring breakthroughs in smart cyber-physical systems, intelligent analytics, AI-driven design, and data-centric system intelligence.",
     ctas: [
       { label: "Register Now", href: "/registration", variant: "primary" },
       { label: "View Speakers", href: "/speakers", variant: "outline" },
@@ -47,7 +50,7 @@ export default function ConferenceDetails() {
       "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1400&auto=format&fit=crop",
     days: [
       {
-        dateLabel: "January 22: A Journey into Innovation",
+        dateLabel: "July 2: A Journey into Innovation",
         items: [
           {
             title: "Keynote Session I",
@@ -72,7 +75,7 @@ export default function ConferenceDetails() {
         ],
       },
       {
-        dateLabel: "January 23: Industry Insights & Collaboration",
+        dateLabel: "July 3: Industry Insights & Collaboration",
         items: [
           {
             title: "Keynote Session III",
@@ -100,26 +103,26 @@ export default function ConferenceDetails() {
   };
 
   const submit = {
-    title: "Submit Your Papers",
-    subtitle: "ICSCPSIA: Advancing Research in AI, ML, IoT, and Computer Science",
+    title: "Submit Your Research",
+    subtitle: "ICSCPSIA 2026: Advancing Smart Cyber-Physical Systems and Intelligent Analytics",
     cards: [
       {
-        title: "Submit Original Research",
-        desc: "Present impactful and groundbreaking work across AI, ML, IoT, and Computer Science.",
+        title: "Present Original Research",
+        desc: "Showcase high-quality, original research addressing challenges and innovations in smart cyber-physical systems, intelligent analytics, AI, and data-driven system design.",
       },
       {
-        title: "Global Audience",
-        desc: "Engage with an international research community and build meaningful collaborations.",
+        title: " Global Research Network",
+        desc: "Connect with an international community of researchers, academicians, and industry experts to exchange ideas and build impactful collaborations.",
       },
       {
-        title: "Prestigious Publication",
-        desc: "Accepted papers may be published in CPS / IEEE Xplore (as applicable).",
+        title: "High-Quality Publication",
+        desc: "Accepted and presented papers will be considered for publication in reputed conference proceedings and digital libraries (as applicable).",
       },
     ],
     strip: {
-      title: "Share Your Expertise at ICSCPSIA",
-      desc: "Submit your research and join leading scholars and industry professionals from around the world.",
-      cta: { label: "Submit Your Papers", href: "/submission" },
+      title: "Share Your Research at ICSCPSIA 2026",
+      desc: "Submit your work and engage with an international community of researchers, academicians, and industry experts.",
+      cta: { label: "Submit Your Papers", href: "/papers" },
       avatar:
         "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600&auto=format&fit=crop",
     },
@@ -142,7 +145,7 @@ export default function ConferenceDetails() {
       <section className="relative py-14 sm:py-16">
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#11b3d4 ]">{about.title}</h2>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0aaff0] ">{about.title}</h2>
             <p className="mt-2 text-sm sm:text-base text-slate-600 max-w-3xl mx-auto">
               {about.subtitle}
             </p>
@@ -221,12 +224,7 @@ export default function ConferenceDetails() {
                 >
                   {about.primaryCta.label}
                 </a>
-                <a
-                  href="/about"
-                  className="inline-flex justify-center items-center rounded-2xl px-6 py-4 font-bold bg-white ring-1 ring-blue-300 text-slate-900 hover:bg-blue-50 transition"
-                >
-                  Learn More
-                </a>
+                
               </div>
             </div>
           </div>
@@ -244,8 +242,7 @@ export default function ConferenceDetails() {
             {/* Left intro */}
             <div className="rounded-3xl bg-blue-50 ring-1 ring-blue-200 p-7 sm:p-8">
               <h3 className="text-xl sm:text-2xl font-extrabold leading-snug">
-                <span style={{ color: accent }}>{agenda.kicker.split(":")[0]}:</span>{" "}
-                {agenda.kicker.split(":").slice(1).join(":").trim()}
+                <span style={{ color: accent }}>{agenda.kicker}:</span>
               </h3>
               <p className="mt-3 text-slate-700 text-sm sm:text-[15px] leading-relaxed">
                 {agenda.intro}

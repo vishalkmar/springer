@@ -21,24 +21,23 @@ export default function Awards() {
         ANNOUNCING ICSCPSIA 2026
       </p>
 
+
+
       <h1 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-wide leading-tight uppercase text-white">
-        International Conference on Smart
+      
+International Research Innovation
         <br className="hidden sm:block" />
-        Cyber-Physical Systems and Intelligent Analytics
+       & Excellence Awards 2026
       </h1>
 
-      <p className="mt-4 text-sm sm:text-base text-white/90 max-w-3xl mx-auto">
-        Advancing smart systems, intelligent analytics, and real-world cyber-physical innovations through global research collaboration.
-      </p>
+      
     </div>
 
     {/* Date Card (single card as requested) */}
     <div className="mt-10 flex justify-center">
       <div className="w-full max-w-3xl rounded-2xl bg-white/12 ring-1 ring-white/25 shadow-[0_18px_60px_rgba(0,0,0,0.18)] backdrop-blur">
         <div className="px-6 py-6 sm:px-10 sm:py-8 text-center">
-          <p className="text-xs font-bold tracking-widest text-white/90">
-            TENTATIVE DATES
-          </p>
+          
           <p className="mt-2 text-2xl sm:text-3xl font-extrabold">
             2–3 July 2026
           </p>
@@ -57,12 +56,12 @@ export default function Awards() {
     {/* CTA */}
     <div className="mt-10 flex justify-center">
       {/* Option A: White BG + Theme Text (recommended) */}
-      <a
+      {/* <a
         href="#"
         className="inline-flex items-center justify-center rounded-2xl bg-white px-8 py-4 text-sm font-extrabold tracking-wide text-[#0c8aa3] shadow-lg shadow-black/15 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
       >
         Nominate Now
-      </a>
+      </a> */}
 
       {/* Option B: Theme BG + White Text (use this instead if you want solid theme button)
       <a
@@ -169,8 +168,8 @@ export default function Awards() {
     </div>
 
     {/* Top Grid: Left content + Right image */}
-    <div className="grid gap-8 lg:grid-cols-2 lg:items-start">
-      {/* Left: Content */}
+    {/* <div className="grid gap-8 lg:grid-cols-2 lg:items-start">
+      
       <div className="space-y-5">
         <div className="rounded-3xl bg-white border border-slate-200 shadow-sm p-6 sm:p-8">
           <p className="text-slate-700 leading-relaxed text-sm sm:text-base">
@@ -192,7 +191,7 @@ export default function Awards() {
         </div>
       </div>
 
-      {/* Right: Image */}
+      
       <div className="rounded-3xl bg-white border border-slate-200 shadow-sm overflow-hidden">
         <div className="relative">
           <img
@@ -209,7 +208,8 @@ export default function Awards() {
           </p>
         </div>
       </div>
-    </div>
+    </div> */}
+
 
     {/* Bottom Cards */}
     <div className="mt-10 grid gap-6 lg:grid-cols-2">
