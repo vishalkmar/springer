@@ -81,7 +81,7 @@ function Router() {
       <Route path="/conference/agenda" component={Agenda} />
       <Route path="/conference" component={AboutConference} />
       <Route path="/about/conference" component={AboutConference} />
-      <Route path="papers" component={Papers} />
+      <Route path="/papers" component={Papers} />
       <Route path="/review" component={Review} />
       <Route path="/faqs" component={Faqs} />
       

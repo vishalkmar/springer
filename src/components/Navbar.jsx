@@ -17,7 +17,7 @@ export function Navbar() {
       href: "/conference",
       children: [
         { label: "About Conference", href: "/about/conference" },
-        { label: "Submit your Papers", href: "papers" },
+        { label: "Submit your Papers", href: "/papers" },
          { label: "Conference Agenda", href: "/conference/agenda" },
         { label: "Review Expression", href: "/review" },
          { label: "FAQs", href: "/faqs" },
