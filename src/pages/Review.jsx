@@ -1,3 +1,4 @@
+import ReviewerSessionChairForm from "../components/ReviewForm";
 
 export default function Review(){
 
@@ -39,5 +40,7 @@ export default function Review(){
           </div>
         </section>
 
+
+            <ReviewerSessionChairForm/>
       </>)
 }

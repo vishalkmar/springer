@@ -1,3 +1,4 @@
+import ConferenceDetails from "../components/ConferenceDetailsabout";
 
 export default function AboutConference(){
 
@@ -38,6 +39,6 @@ export default function AboutConference(){
           </div>
         </section>
 
-
+  <ConferenceDetails/>
       </>)
 }     
