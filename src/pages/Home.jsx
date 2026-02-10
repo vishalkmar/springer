@@ -73,10 +73,10 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-slate-200 border-x border-slate-200">
             {[
-              { label: "Submission", icon: FileText, href: "/submission" },
+              { label: "Submission", icon: FileText, href: "/papers" },
               { label: "Registration", icon: Users, href: "/registration" },
-              { label: "Program", icon: Calendar, href: "/program" },
-              { label: "Venue", icon: MapPin, href: "/program/venue" },
+              { label: "About Conference", icon: Calendar, href: "/about/conference" },
+              { label: "Venue", icon: MapPin, href: "/venue" },
             ].map((item, idx) => (
               <Link key={idx} href={item.href}>
                 <div className="group flex cursor-pointer flex-col items-center justify-center py-8 px-4 transition-all duration-300 hover:bg-[#42a1f5]/5">
