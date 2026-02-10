@@ -64,7 +64,7 @@ export default function Speakers() {
               </p>
 
               <h1 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-wide leading-tight uppercase text-white">
-                Keynotes Spearkers To Be Announced Soon
+                Keynote Spearkers 
 
               </h1>
 
@@ -86,6 +86,15 @@ export default function Speakers() {
 
     {/* <KeynoteSpeakersSection/> */}
 
+
+        <div className="relative mx-auto my-[150px] max-w-7xl px-4 sm:px-6 lg:px-8 ">
+            {/* Title */}
+            <div className="text-center"> 
+              <h1 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-wide leading-tight uppercase text-[#0699cf]">
+                Keynote Spearkers To be Announced Soon
+              </h1>
+            </div>
+          </div>
       </div>
 
       </>

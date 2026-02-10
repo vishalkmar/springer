@@ -1,14 +1,7 @@
 import React from "react";
 
 export default function AboutConferenceSection() {
-  const dates = [
-    { label: "Submit Your Papers", value: "To Be Announced." },
-    // { label: "Last Date of Paper Submission", value: "December 25, 2025" },
-    // { label: "Notification of Acceptance", value: "January 05, 2026" },
-    // { label: "Last Date for Camera Ready", value: "January 10, 2026" },
-    // { label: "Last Date of Registration", value: "January 10, 2026" },
-    // { label: "Conference Dates", value: "January 22-23, 2026" },
-  ];
+  const dates = [{ label: "Submit Your Papers", value: "To Be Announced." }];
 
   return (
     <section className="w-full bg-white py-12 sm:py-16">
@@ -19,109 +12,125 @@ export default function AboutConferenceSection() {
             About the Conference
           </h2>
           <p className="mx-auto mt-2 max-w-2xl text-sm text-slate-600">
-            Discover the vision, purpose, and key milestones of  ICSCPSIA.
+            Discover the vision, purpose, and key milestones of ICSCPSIA.
           </p>
         </div>
 
-        {/* Top: Image left, Info right */}
-        <div className="mt-8 grid gap-6 lg:grid-cols-12 lg:items-stretch">
-          {/* Image */}
-          <div className="lg:col-span-7">
-            <div className="overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200">
-              <div className="aspect-[16/10] w-full sm:aspect-[16/9]">
-                <img
-                  src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1600&q=80"
-                  alt="Conference"
-                  className="h-full w-full object-cover"
-                  loading="lazy"
-                />
-              </div>
+        {/* TOP: Left Image + Right Text (equal width & height) */}
+        <div className="mt-8 grid gap-6 lg:grid-cols-2 lg:items-stretch">
+          {/* LEFT: Only Image */}
+          <div className="h-full">
+            <div className="relative h-full min-h-[420px] overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200">
+              <img
+                src="/session chairs/aboutconference.jpg"
+                alt="Conference"
+                className="absolute inset-0 h-full w-full object-cover"
+                loading="lazy"
+              />
             </div>
           </div>
 
-          {/* About Text */}
-          <div className="lg:col-span-5">
-            <div className="h-full rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200 sm:p-7">
-              <p className="inline-flex rounded-full bg-[#42a1f5]/10 px-3 py-1 text-xs font-semibold text-[#42a1f5]">
-              ICSCPSIA
-              </p>
+          {/* RIGHT: Only Text + Button */}
+          <div className="h-full">
+            <div className="h-full min-h-[420px] rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200 sm:p-7 flex flex-col">
+              <span className="inline-flex w-fit rounded-full bg-[#42a1f5]/10 px-3 py-1 text-xs font-semibold text-[#42a1f5]">
+                ICSCPSIA
+              </span>
 
               <h3 className="mt-4 text-lg font-semibold text-slate-900 sm:text-xl">
-             Be Part of a Leading Global Research Forum in 2026
-
+                Be Part of a Leading Global Research Forum in 2026
               </h3>
-               <p>
-                 The International Conference on Smart Cyber-Physical Systems and Intelligent Analytics (ICSCPSIA 2026) is a premier international forum uniting researchers, academicians, and industry experts working at the intersection of intelligent systems, analytics, and cyber-physical integration.
 
+              <div className="mt-3 space-y-4 text-sm leading-relaxed text-slate-600">
+                <p>
+                  The International Conference on Smart Cyber-Physical Systems and
+                  Intelligent Analytics (ICSCPSIA 2026) is a premier international
+                  forum bringing together researchers, academicians, and industry
+                  experts working at the intersection of intelligent systems,
+                  analytics, and cyber-physical integration.
                 </p>
 
-              <div className="mt-3 space-y-3 text-sm leading-relaxed text-slate-600">
                 <p>
-                 The conference offers a high-quality platform for presenting innovative research, exchanging advanced ideas, and building collaborations that address complex challenges in next-generation smart and autonomous systems.
+                  The conference provides a high-quality platform for presenting
+                  innovative research, exchanging advanced ideas, and building
+                  collaborations that address complex challenges in next-generation
+                  smart and autonomous systems.
                 </p>
+
                 <p>
-                 With strong international participation anticipated, ICSCPSIA 2026 is set to deliver an intellectually stimulating and globally connected academic experience.</p>
-                
+                  With strong international participation anticipated, ICSCPSIA 2026
+                  promises an intellectually stimulating and globally connected
+                  academic experience.
+                </p>
               </div>
 
-              <div className="mt-5 rounded-xl bg-slate-50 p-4 ring-1 ring-slate-200">
-                <div className="flex items-start gap-3">
-                  <span className="mt-0.5 inline-flex h-9 w-9 items-center justify-center rounded-xl bg-white text-[#42a1f5] ring-1 ring-slate-200">
-                    {/* info icon */}
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      className="h-5 w-5"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                      />
-                      <path
-                        d="M12 16v-5"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                      />
-                      <path
-                        d="M12 8h.01"
-                        stroke="currentColor"
-                        strokeWidth="3"
-                        strokeLinecap="round"
-                      />
-                    </svg>
-                  </span>
-                  <div>
-                    <p className="text-sm font-semibold text-slate-900">Theme Focus</p>
-                    <p className="text-sm text-slate-600">
-                     Smart Cyber-Physical Systems • Intelligent Analytics • Artificial Intelligence • Machine Learning • Data-Driven System Design
-
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+              {/* keep button at bottom */}
+              <div className="mt-auto pt-6">
                 <a
-                  href="#register"
-                  className="inline-flex items-center justify-center rounded-xl bg-[#42a1f5] px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-[#42a1f5] focus:ring-offset-2"
+                  href="/registration"
+                  className="inline-flex items-center justify-center rounded-xl bg-[#42a1f5] px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-[#42a1f5] focus:ring-offset-2"
                 >
                   Register Now
-                </a>
-                <a
-                  href="#call-for-papers"
-                  className="inline-flex items-center justify-center rounded-xl bg-white px-4 py-2.5 text-sm font-semibold text-slate-900 ring-1 ring-slate-200 transition hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-[#42a1f5] focus:ring-offset-2"
-                >
-                  Call for Papers
                 </a>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Bottom: Two half width horizontal cards */}
+        {/* THEME FOCUS: Horizontal CTA strip below both cards */}
+        <div className="mt-6">
+          <div className="rounded-2xl bg-slate-50 p-5 ring-1 ring-slate-200 shadow-sm">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+              <div className="flex items-start gap-3">
+                <span className="mt-0.5 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-white text-[#42a1f5] ring-1 ring-slate-200">
+                  {/* info icon */}
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    className="h-5 w-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    />
+                    <path
+                      d="M12 16v-5"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                    />
+                    <path
+                      d="M12 8h.01"
+                      stroke="currentColor"
+                      strokeWidth="3"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                </span>
+
+                <div>
+                  <p className="text-sm font-semibold text-slate-900">Theme Focus</p>
+                  <p className="mt-0.5 text-sm text-slate-600">
+                    Smart Cyber-Physical Systems • Intelligent Analytics • Artificial
+                    Intelligence • Machine Learning • Data-Driven System Design
+                  </p>
+                </div>
+              </div>
+
+              {/* optional CTA style chip (looks like CTA) */}
+              <a
+                href="/papers"
+                className="inline-flex w-full sm:w-auto items-center justify-center rounded-xl bg-white px-4 py-2.5 text-sm font-semibold text-slate-900 ring-1 ring-slate-200 hover:bg-slate-100 transition"
+              >
+                Explore Call for Papers
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom: Dates + Venue */}
         <div className="mt-6 grid gap-6 lg:grid-cols-2">
           {/* Important Dates */}
           <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200 sm:p-7">
@@ -152,7 +161,9 @@ export default function AboutConferenceSection() {
                 <p className="text-xs font-semibold tracking-wide text-[#42a1f5]">
                   IMPORTANT DATES
                 </p>
-                <p className="text-sm text-slate-600">Keep track of key submission milestones</p>
+                <p className="text-sm text-slate-600">
+                  Keep track of key submission milestones
+                </p>
               </div>
             </div>
 
@@ -194,7 +205,9 @@ export default function AboutConferenceSection() {
                 </svg>
               </span>
               <div>
-                <p className="text-xs font-semibold tracking-wide text-[#42a1f5]">VENUE</p>
+                <p className="text-xs font-semibold tracking-wide text-[#42a1f5]">
+                  VENUE
+                </p>
                 <p className="text-sm text-slate-600">Conference location details</p>
               </div>
             </div>
@@ -211,12 +224,15 @@ export default function AboutConferenceSection() {
             <div className="mt-5 grid gap-3 sm:grid-cols-2">
               <div className="rounded-xl bg-white p-4 ring-1 ring-slate-200">
                 <p className="text-xs font-semibold text-slate-500">Dates</p>
-                <p className="mt-1 text-sm font-semibold text-slate-900">2–3 July 2026
-</p>
+                <p className="mt-1 text-sm font-semibold text-slate-900">
+                  2–3 July 2026
+                </p>
               </div>
               <div className="rounded-xl bg-white p-4 ring-1 ring-slate-200">
                 <p className="text-xs font-semibold text-slate-500">Timings</p>
-                <p className="mt-1 text-sm font-semibold text-slate-900">8:00 AM - 6:00 PM</p>
+                <p className="mt-1 text-sm font-semibold text-slate-900">
+                  8:00 AM - 6:00 PM
+                </p>
               </div>
             </div>
 

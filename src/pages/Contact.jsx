@@ -65,7 +65,7 @@ export default function Contact() {
                     <h4 className="text-lg font-semibold text-slate-900">Phone Support</h4>
                     <p className="mt-1 font-medium text-[#42a1f5]">+91-8199050507</p>
                     <p className="mt-1 text-sm text-slate-500">
-                     Mon - Fri, 9:00 AM - 5:00 PM (IST)
+                     Mon - Fri, 10:00 AM - 6:00 PM (IST)
 
                     </p>
                   </div>

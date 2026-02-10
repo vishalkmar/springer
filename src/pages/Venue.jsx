@@ -1,5 +1,7 @@
 import React from "react";
 
+// import CtaSubmitPaper from "@/components/CtaSubmitPaper";
+
 export default function VenueCard() {
   const data = {
     title: "India International\nCentre",
@@ -8,11 +10,12 @@ export default function VenueCard() {
     location: "India International Centre, Lodhi Estate, New Delhi, India",
     mapUrl: "https://maps.google.com/?q=India%20International%20Centre%20Lodhi%20Estate%20New%20Delhi",
     imageUrl:
-      "https://iccict.org/assets/img/brand/muc-2-min.jpg", // replace with your image if needed
+      "/session chairs/internationalvenue.jpg", // replace with your image if needed
   };
 
   return (
-    <section className="w-full bg-slate-50 py-10">
+     <>
+    <section className="w-75 bg-slate-50 py-10">
       <div className="mx-auto max-w-6xl px-4">
         <div className="grid gap-6 lg:grid-cols-12">
           {/* Image Card */}
@@ -166,5 +169,8 @@ export default function VenueCard() {
         </div>
       </div>
     </section>
+
+    {/* <CtaSubmitPaper /> */}
+   </>
   );
 }

@@ -20,7 +20,7 @@ export default function ConferenceDetails() {
       "International Conference on Smart Cyber-Physical Systems and Intelligent Analytics(ICSCPSIA 2026)",
   
       body: [
-      `Scheduled to take place in July 2026, the International Conference on Smart Cyber-Physical Systems and Intelligent Analytics (ICSCPSIA 2026) offers a premier platform for researchers and practitioners to present original research, share innovative ideas through technical and poster sessions, and build meaningful international collaborations.`,
+      `The International Conference on Smart Cyber-Physical Systems and Intelligent Analytics (ICSCPSIA 2026) is a premier international forum bringing together researchers and practitioners to present original research, share innovative ideas through technical and poster sessions, and build meaningful global collaborations.`,
       `The conference attracts a diverse and vibrant audience comprising researchers, academicians, scholars, industry professionals, and innovators, fostering rich discussions across interconnected domains of intelligent systems, analytics, and cyber-physical integration.`,
       `Guided by a strong interdisciplinary vision, ICSCPSIA 2026 serves as a dynamic meeting ground where theory, computation, and real-world system design converge. Participants will have the opportunity to disseminate high-quality research, engage with global experts, and contribute to shaping the future of intelligent, data-driven, and resilient cyber-physical systems.`,
     ],
@@ -29,10 +29,10 @@ export default function ConferenceDetails() {
     
     images: {
       hero:
-        "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1400&auto=format&fit=crop",
+        "/session chairs/conf1.jpg",
       gallery: [
-        "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=900&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=900&auto=format&fit=crop",
+       "/session chairs/conf2.jpg",
+        "/session chairs/conf3.jpg",
       ],
     },
   };
@@ -47,7 +47,7 @@ export default function ConferenceDetails() {
       { label: "View Speakers", href: "/speakers", variant: "outline" },
     ],
     sideImage:
-      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1400&auto=format&fit=crop",
+      "/session chairs/agendaimage.jpg",
     days: [
       {
         dateLabel: "July 2: A Journey into Innovation",
@@ -123,8 +123,7 @@ export default function ConferenceDetails() {
       title: "Share Your Research at ICSCPSIA 2026",
       desc: "Submit your work and engage with an international community of researchers, academicians, and industry experts.",
       cta: { label: "Submit Your Papers", href: "/papers" },
-      avatar:
-        "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600&auto=format&fit=crop",
+     
     },
   };
 
@@ -172,7 +171,7 @@ export default function ConferenceDetails() {
                     <img
                       src={src}
                       alt={`Gallery ${i + 1}`}
-                      className="w-full h-28 sm:h-32 object-cover"
+                      className="w-full h-36 sm:h-40 object-cover"
                       loading="lazy"
                     />
                   </div>
@@ -389,14 +388,14 @@ export default function ConferenceDetails() {
           {/* CTA strip */}
           <div className="mt-10 rounded-3xl bg-blue-50 ring-1 ring-blue-200 p-6 sm:p-8 flex flex-col lg:flex-row items-center gap-6">
             <div className="flex items-center gap-4 w-full lg:w-auto">
-              <div className="h-16 w-16 rounded-2xl overflow-hidden ring-1 ring-blue-200 bg-blue-100">
+              {/* <div className="h-16 w-16 rounded-2xl overflow-hidden ring-1 ring-blue-200 bg-blue-100">
                 <img
                   src={submit.strip.avatar}
                   alt="Speaker"
                   className="h-full w-full object-cover"
                   loading="lazy"
                 />
-              </div>
+              </div> */}
               <div>
                 <div className="text-lg font-extrabold text-slate-900">{submit.strip.title}</div>
                 <div className="text-sm text-slate-700 mt-1">{submit.strip.desc}</div>

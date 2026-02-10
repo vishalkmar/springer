@@ -25,17 +25,17 @@ export default function ExhibitorsData() {
     {
       name: "Traveon Ventures LLP",
       role: "Organizer",
-      logo: "https://iccict.org/assets/img/sponsors_logo/traveon.svg",
+      logo: "/session chairs/traveon.svg",
     },
     {
       name: "India International Centre",
       role: "Host at",
-      logo: "https://iccict.org/assets/img/sponsors_logo/iic.jpg",
+      logo: "/session chairs/indiainternational.jpg",
     },
   ];
 
   const SPONSORS = [
-    { name: "EGS Group", role: "Sponsor", logo: "https://iccict.org/assets/img/sponsors_logo/egs.jpg" },
+    { name: "EGS Group", role: "Sponsor", logo: "/session chairs/egs.jpg" },
   ];
 
   const WHY = [

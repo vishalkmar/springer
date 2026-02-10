@@ -26,6 +26,17 @@ export default function AboutConference(){
 
             </div>
 
+{/* Date Card (single card as requested) */}
+    <div className="mt-10 flex justify-center">
+      <div className="w-full max-w-3xl rounded-2xl bg-white/12 ring-1 ring-white/25 shadow-[0_18px_60px_rgba(0,0,0,0.18)] backdrop-blur">
+        <div className="px-6 py-6 sm:px-10 sm:py-8 text-center">
+          
+          <p className="mt-2 text-2xl sm:text-3xl font-extrabold">
+            2–3 July 2026
+          </p>
+        </div>
+      </div>
+    </div>
 
 
             {/* Address */}

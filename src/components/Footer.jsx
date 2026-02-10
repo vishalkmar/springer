@@ -34,7 +34,7 @@ export function Footer() {
                   IP
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold leading-none">ICSCPSIA </h3>
+                  <h3 className="text-xl font-bold leading-none text-white">ICSCPSIA </h3>
                   <p className="text-xs text-white/80 mt-1">International Conference on Smart Cyber-Physical Systems and Intelligent Analytics
 </p>
                 </div>
@@ -63,21 +63,21 @@ export function Footer() {
               <h3 className="text-lg font-bold mb-6 text-white border-b border-white/20 pb-2 inline-block">Contact Us</h3>
               <div className="space-y-4 text-sm text-white/90">
                 <div className="flex items-start gap-3">
-                  <Mail className="w-5 h-5 text-[hsl(var(--accent))] shrink-0 mt-0.5" />
+                  <Mail className="w-5 h-5 text-white shrink-0 mt-0.5" />
                   <div>
                     <p className="font-medium text-white">info@ICSCPSIA.org</p>
                     {/* <a href="mailto:ipee_conf@126.com" className="hover:text-white transition-colors">ipee_conf@126.com</a> */}
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <MapPin className="w-5 h-5 text-[hsl(var(--accent))] shrink-0 mt-0.5" />
+                  <MapPin className="w-5 h-5 text-white shrink-0 mt-0.5" />
                   <p className="text-white/90">India International Centre, Lodhi Estate, New Delhi, India
                 </p>
                 </div>
-                {/* <div className="flex items-start gap-3">
-                  <Globe className="w-5 h-5 text-[hsl(var(--accent))] shrink-0 mt-0.5" />
-                  <a href="https://ipee.net" className="hover:text-white transition-colors">www..net</a>
-                </div> */}
+                <div className="flex items-start gap-3">
+                  <Globe className="w-5 h-5 text-white shrink-0 mt-0.5" />
+                  <a href="https://icscpsia.org" className="hover:text-white transition-colors">www.icscpsia.org</a>
+                </div>
               </div>
             </div>
 

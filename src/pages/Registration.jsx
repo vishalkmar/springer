@@ -103,7 +103,9 @@ export default function Registration() {
       
     </div>
 
-    
+      <p className="text-lg text-center my-4 sm:text-xl font-extrabold">
+         2-3 July 2026 
+      </p>
    
 
     {/* Address */}

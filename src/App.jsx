@@ -12,7 +12,7 @@ import { Footer } from "@/components/Footer";
 import Home from "@/pages/Home";
 import Committee from "@/pages/Committee";
 import Speakers from "@/pages/Speakers";
-import CFP from "@/pages/CFP";
+
 import Submission from "@/pages/Submission";
 import Program from "@/pages/Program";
 import Registration from "@/pages/Registration";
@@ -58,9 +58,7 @@ function Router() {
       <Route path="/speakers" component={Speakers} />
       <Route path="/speakers/invited" component={Speakers} />
       
-      {/* CFP Routes */}
-      <Route path="/cfp" component={CFP} />
-      <Route path="/cfp/special" component={CFP} />
+    
       
       {/* Submission Routes */}
       <Route path="/submission" component={Submission} />

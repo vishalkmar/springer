@@ -20,7 +20,7 @@ export default function keynoteRegistrationPage(){
               </p>
 
               <h1 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-wide leading-tight uppercase text-white">
-                Keynotes Spearkers Registration
+                Keynote Spearkers Registration
 
               </h1>
 
