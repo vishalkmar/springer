@@ -17,11 +17,11 @@ export default function Review(){
             {/* Title */}
             <div className="text-center">
               <p className="inline-flex items-center rounded-full bg-white/15 px-4 py-2 text-[11px] sm:text-xs font-bold tracking-widest ring-1 ring-white/25">
-                 Reviewers
+                 Call for Special Session
               </p>
 
               <h1 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-wide leading-tight uppercase text-white">
-               Reviewer/Session Chair Expression of Interest Form
+              Call for Special Session
 
               </h1>
 
@@ -29,8 +29,15 @@ export default function Review(){
 
 
 
-            {/* Address */}
+            
             <div className="mt-8 text-center">
+              <p className="text-lg sm:text-xl font-extrabold">
+                2-3 July 2026
+              </p>
+            </div>
+
+            {/* Address */}
+            <div className="mt-2 text-center">
               <p className="text-lg sm:text-xl font-extrabold">
                 India International Centre, Lodhi, New Delhi-110003
               </p>

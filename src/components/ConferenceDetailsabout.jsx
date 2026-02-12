@@ -122,7 +122,7 @@ export default function ConferenceDetails() {
     strip: {
       title: "Share Your Research at ICSCPSIA 2026",
       desc: "Submit your work and engage with an international community of researchers, academicians, and industry experts.",
-      cta: { label: "Submit Your Papers", href: "/papers" },
+      cta: { label: "Submit Your Papers", href: "/paper-submission" },
      
     },
   };

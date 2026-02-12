@@ -193,10 +193,10 @@ export default function ReviewerSessionChairForm() {
             <div className="flex items-start justify-between gap-4">
               <div>
                 <h2 className="text-xl sm:text-2xl font-extrabold tracking-tight text-white">
-                  Reviewer / Session Chair Details
+                 Call for Special Session
                 </h2>
                 <p className="mt-1 text-white/90 text-sm">
-                  Please fill your details to register as a Reviewer or Session Chair.
+                  Please fill your details to register as Call for Special Session.
                 </p>
               </div>
               <div className="hidden sm:flex items-center gap-2">
@@ -346,7 +346,7 @@ export default function ReviewerSessionChairForm() {
                   ))}
                 </select>
                 <p className="mt-1 text-[11px] text-slate-500">
-                  Choose whether you wish to serve as a Reviewer or as a Session Chair.
+                  Choose whether you wish to serve as a Reviewer or as a Special Session.
                 </p>
                 <FieldError msg={touched.role ? errors.role : ""} />
               </div>

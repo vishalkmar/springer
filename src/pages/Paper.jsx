@@ -23,14 +23,19 @@ export default function Papers(){
                 SUBMIT YOUR PAPERS
 
               </h1>
-              <p>If you are facing any issues while submitting your paper, please email your paper to info@icscpsia.org along with all the required details mentioned below.</p>
-
+             
             </div>
 
 
 
-            {/* Address */}
             <div className="mt-8 text-center">
+              <p className="text-lg sm:text-xl font-extrabold">
+                2-3 July 2026
+              </p>
+            </div>
+
+            {/* Address */}
+            <div className="mt-2 text-center">
               <p className="text-lg sm:text-xl font-extrabold">
                 India International Centre, Lodhi, New Delhi-110003
               </p>

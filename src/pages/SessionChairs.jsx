@@ -22,7 +22,7 @@ export default function SessionChairs(){
       </p>
 
       <h1 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-wide leading-tight uppercase text-white">
-         Session charis 
+         Session chairs 
       </h1>
 
       
@@ -31,13 +31,19 @@ export default function SessionChairs(){
      
    
 
-    {/* Address */}
-    <div className="mt-8 text-center">
-      <p className="text-lg sm:text-xl font-extrabold">
-        India International Centre, Lodhi, New Delhi-110003
-      </p>
-      <div className="mx-auto mt-3 h-[3px] w-56 sm:w-80 rounded-full bg-white/55" />
-    </div>
+   <div className="mt-8 text-center">
+              <p className="text-lg sm:text-xl font-extrabold">
+                2-3 July 2026
+              </p>
+            </div>
+
+            {/* Address */}
+            <div className="mt-2 text-center">
+              <p className="text-lg sm:text-xl font-extrabold">
+                India International Centre, Lodhi, New Delhi-110003
+              </p>
+              <div className="mx-auto mt-3 h-[3px] w-56 sm:w-80 rounded-full bg-white/55" />
+            </div>
 
    
    
@@ -47,7 +53,7 @@ export default function SessionChairs(){
   
 </section>
 
-<div className="relative mx-auto my-[150px] max-w-7xl px-4 sm:px-6 lg:px-8 ">
+      <div className="relative mx-auto my-[150px] max-w-7xl px-4 sm:px-6 lg:px-8 ">
             {/* Title */}
             <div className="text-center"> 
               <h1 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-wide leading-tight uppercase text-[#0699cf]">

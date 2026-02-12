@@ -64,7 +64,7 @@ export default function Speakers() {
               </p>
 
               <h1 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-wide leading-tight uppercase text-white">
-                Keynote Spearkers 
+                Keynote Speakers 
 
               </h1>
 
@@ -91,7 +91,7 @@ export default function Speakers() {
             {/* Title */}
             <div className="text-center"> 
               <h1 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-wide leading-tight uppercase text-[#0699cf]">
-                Keynote Spearkers To be Announced Soon
+                Keynote Speakers To be Announced Soon
               </h1>
             </div>
           </div>

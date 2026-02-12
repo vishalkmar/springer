@@ -33,6 +33,18 @@ import Papers from "./pages/Paper";
 
 import BecomeSponsor from "@/pages/BecomeSponsor";
 
+import OrganizingCommittee from "./pages/OrganizingCommittee";
+import TechnicalCommittee from "./pages/TechnicalCommittee";
+import AdvisoryCommittee from "./pages/AdvisoryCommittee";
+import LeadershipCommittee from "./pages/LeadershipCommittee";
+
+import ImportantDate from "./pages/ImportantDates";
+import CallForPaper from "./pages/CallForPaper";
+
+
+import Publication from "./pages/Publication";
+import PreviousConference from "./pages/PreviousConference";
+
 // Scroll to top on route change
 function ScrollToTop() {
   const [pathname] = useLocation();
@@ -82,10 +94,21 @@ function Router() {
       <Route path="/conference/agenda" component={Agenda} />
       <Route path="/conference" component={AboutConference} />
       <Route path="/about/conference" component={AboutConference} />
-      <Route path="/papers" component={Papers} />
-      <Route path="/review" component={Review} />
+      <Route path="/paper-submission" component={Papers} />
+      <Route path="/call-for-sessions" component={Review} />
       <Route path="/faqs" component={Faqs} />
       <Route path="/become-sponsor" component={BecomeSponsor} />
+
+      {/* committe routes */}
+      <Route path="/organizing-committee" component={OrganizingCommittee} />
+      <Route path="/technical-committee" component={TechnicalCommittee} />
+      <Route path="/advisory-committee" component={AdvisoryCommittee} />
+      <Route path="/conference-leadership" component={LeadershipCommittee} />
+
+      <Route path="/important-dates" component={ImportantDate} />
+      <Route path="/call-for-paper" component={CallForPaper} />
+      <Route path="/publication" component={Publication}/>
+      <Route path="/previous-conference" component={PreviousConference}/>
       
       <Route component={NotFound} />
     </Switch>

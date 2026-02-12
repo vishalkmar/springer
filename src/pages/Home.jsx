@@ -17,7 +17,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           {/* Unsplash image: Modern city power grid / technology */}
           <img
-            src="https://www.uscybersecurity.net/wp-content/uploads/2018/06/Conference-pic.jpg"
+            src="/homebannerimage.jpg"
             alt="Power Lines Background"
             className="w-full h-full object-cover"
           />
@@ -31,7 +31,7 @@ export default function Home() {
             transition={{ duration: 0.8 }}
           >
             <div className="inline-block px-4 py-1 border border-white/30 bg-white/10 backdrop-blur-sm rounded-full mb-6">
-              <span className="uppercase tracking-widest text-sm font-semibold"></span>
+              <span className="uppercase tracking-widest text-sm font-semibold">ICSCPSIA 2026</span>
             </div>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-display leading-tight text-white mb-6 drop-shadow-lg">
@@ -73,7 +73,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-slate-200 border-x border-slate-200">
             {[
-              { label: "Submission", icon: FileText, href: "/papers" },
+              { label: "Submission", icon: FileText, href: "/paper-submission" },
               { label: "Registration", icon: Users, href: "/registration" },
               { label: "About Conference", icon: Calendar, href: "/about/conference" },
               { label: "Venue", icon: MapPin, href: "/venue" },
@@ -100,11 +100,7 @@ export default function Home() {
         </div>
       </div>
 
-
-
-
       <AboutConferenceSection />
-
 
       <SessionChairsSection
         chairs={[
@@ -175,94 +171,104 @@ export default function Home() {
               {
                 id: 1,
                 title: "Cyber-Physical & Smart Systems",
-                desc: "Integration of computation, communication, and physical processes.",
+                desc: "Architectures, modeling, and co-design of intelligent cyber-physical infrastructures.",
                 points: [
-                  "Smart cities, grids, and cyber-physical infrastructures",
-                  "IoT/IIoT architectures and edge–cloud systems",
-                  "Security, safety, and resilient CPS design",
+                  "Cyber-Physical Systems (CPS): architectures, modeling, and co-design",
+                  "Smart and autonomous cyber-physical systems",
+                  "Embedded and real-time systems",
+                  "Sensor and actuator systems for CPS",
+                  "Digital twins for cyber-physical systems",
+                  "Networked and distributed cyber-physical systems",
                 ],
               },
               {
                 id: 2,
-                title: "AI & Machine Learning for Systems",
-                desc: "Intelligent algorithms for adaptive and autonomous systems.",
+                title: "Machine Learning & Artificial Intelligence for Systems",
+                desc: "AI-driven methodologies for adaptive, intelligent, and safety-critical systems.",
                 points: [
-                  "Deep learning and reinforcement learning",
-                  "Decision-making and system optimization",
-                  "Explainable and trustworthy AI",
+                  "ML methods for cyber-physical and networked systems",
+                  "AI for system monitoring, control, and optimization",
+                  "Deep learning for perception, sensing, and system intelligence",
+                  "Reinforcement learning for adaptive and autonomous control",
+                  "Multi-agent learning for distributed and cooperative systems",
+                  "Explainable and trustworthy AI for safety-critical systems",
                 ],
               },
               {
                 id: 3,
-                title: "Intelligent Analytics & Data-Driven Modeling",
-                desc: "Data-centric approaches for prediction and monitoring.",
+                title: "Intelligent Analytics & Data-Driven Systems",
+                desc: "Data-centric modeling, analytics, and intelligent decision frameworks.",
                 points: [
-                  "Digital twins and hybrid modeling",
-                  "Time-series analytics and anomaly detection",
-                  "Predictive maintenance techniques",
+                  "Intelligent data analytics for CPS and networked systems",
+                  "Data-driven modeling and system identification",
+                  "Predictive analytics for fault detection and maintenance",
+                  "Real-time, streaming, and edge analytics for systems",
+                  "Sensor data fusion and multimodal analytics",
                 ],
               },
               {
                 id: 4,
-                title: "Control, Automation & Robotics",
-                desc: "Advanced control strategies and robotic applications.",
+                title: "Control, Automation, and Robotics",
+                desc: "Advanced control strategies and intelligent automation technologies.",
                 points: [
-                  "Adaptive and optimal control systems",
-                  "Robotics, drones, and autonomous agents",
-                  "Industrial automation and smart manufacturing",
+                  "Intelligent control systems and AI-based controllers",
+                  "Robotics and autonomous cyber-physical systems",
+                  "Automation and smart manufacturing systems",
+                  "Industrial cyber-physical systems",
                 ],
               },
               {
                 id: 5,
-                title: "Energy, Transportation & Infrastructure Systems",
-                desc: "Sustainable and intelligent large-scale systems.",
+                title: "Energy, Transportation, and Infrastructure Systems",
+                desc: "Sustainable and large-scale intelligent system applications.",
                 points: [
-                  "Smart energy systems and microgrids",
-                  "Intelligent transportation systems",
-                  "Critical infrastructure monitoring",
+                  "Smart grids and intelligent energy systems",
+                  "Power systems analytics and control",
+                  "Vehicular networking and connected transportation systems",
+                  "Aerospace and safety-critical cyber-physical systems",
                 ],
               },
               {
                 id: 6,
-                title: "Interdisciplinary & Emerging Applications",
-                desc: "Cross-domain and future-oriented CPS research.",
+                title: "Interdisciplinary and Emerging System Applications",
+                desc: "Cross-domain CPS research and emerging system technologies.",
                 points: [
-                  "Healthcare and biomedical systems",
-                  "Aerospace and mission-critical systems",
-                  "Emerging technologies and applications",
+                  "Healthcare and biological cyber-physical systems",
+                  "Social and economic systems modeling",
+                  "Smart cities and urban infrastructure systems",
+                  "Security, resilience, and reliability of AI-enabled systems",
                 ],
               },
-            ].map((track) => (
-              <motion.div
-                key={track.id}
-                whileHover={{ y: -4 }}
-                className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-all"
-              >
-                {/* Header */}
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="w-11 h-11 rounded-xl bg-[#42a1f5]/10 text-[#42a1f5] flex items-center justify-center font-semibold">
-                    {track.id}
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-slate-900">
-                      {track.title}
-                    </h3>
-                    <p className="text-sm text-slate-600 mt-1">
-                      {track.desc}
-                    </p>
-                  </div>
+            ]
+         .map((track) => (
+            <motion.div
+              key={track.id}
+              whileHover={{ y: -4 }}
+              className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-all"
+            >
+              {/* Header */}
+              <div className="flex items-start gap-4 mb-4">
+                <div className="w-11 h-11 rounded-xl bg-[#42a1f5]/10 text-[#42a1f5] flex items-center justify-center font-semibold">
+                  {track.id}
                 </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-slate-900">
+                    {track.title}
+                  </h3>
+                 
+                </div>
+              </div>
 
-                {/* Points */}
-                <ul className="space-y-2 text-sm text-slate-700">
-                  {track.points.map((point, idx) => (
-                    <li key={idx} className="flex items-start gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-[#42a1f5] mt-0.5" />
-                      <span>{point}</span>
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
+              {/* Points */}
+              <ul className="space-y-2 text-sm text-slate-700">
+                {track.points.map((point, idx) => (
+                  <li key={idx} className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-[#42a1f5] mt-0.5" />
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
             ))}
           </div>
 
@@ -283,14 +289,14 @@ export default function Home() {
       {/* <section className="py-16 bg-slate-50 border-t border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center"> */}
 
-          {/* Heading */}
-          {/* <section className="py-12 bg-white text-center border-t border-slate-200">
+      {/* Heading */}
+      {/* <section className="py-12 bg-white text-center border-t border-slate-200">
             <h2 className="text-3xl md:text-4xl font-bold text-[#1eb2fc]">Technical Sponsors & Partner </h2>
 
           </section> */}
 
 
-          {/* <div className="flex flex-wrap justify-center gap-8">
+      {/* <div className="flex flex-wrap justify-center gap-8">
             {["IEEE", "PES", "University of Science", "Engineering Inst"].map(
               (name, i) => (
                 <div
@@ -312,7 +318,7 @@ export default function Home() {
               )
             )}
           </div> */}
-        {/* </div>
+      {/* </div>
       </section> */}
 
       {/* Venue Section Heading */}

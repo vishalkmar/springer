@@ -1,7 +1,13 @@
 import React from "react";
 
 export default function AboutConferenceSection() {
-  const dates = [{ label: "Submit Your Papers", value: "To Be Announced." }];
+  const dates = [
+    { event: "Paper Submission Deadline", date: "15 March 2026" },
+    { event: "Notification of Acceptance",  date: "15 April 2026" },
+    { event: "Camera Ready Submission", date: "15 May 2026" },
+    { event: "Early Registration Deadline",  date: "25 May 2026" },
+    { event: "Conference Date",  date: "2-3 July 2026" },
+  ];
 
   return (
     <section className="w-full bg-white py-12 sm:py-16">
@@ -168,16 +174,26 @@ export default function AboutConferenceSection() {
             </div>
 
             <ul className="mt-5 space-y-3">
-              {dates.map((d, idx) => (
-                <li key={idx} className="flex items-start gap-3">
-                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#42a1f5]" />
-                  <div className="flex-1">
-                    <p className="text-sm font-medium text-slate-900">{d.label}</p>
-                    <p className="text-sm text-slate-600">{d.value}</p>
-                  </div>
-                </li>
-              ))}
-            </ul>
+  {dates.map((d, idx) => (
+    <li key={idx} className="grid grid-cols-[220px_1fr] gap-4 items-start">
+      
+      {/* Event Name */}
+      <div className="flex items-start gap-3">
+        <span className="mt-1.5 h-2 w-2 rounded-full bg-[#42a1f5]" />
+        <span className="text-sm font-medium text-slate-900">
+          {d.event}
+        </span>
+      </div>
+
+      {/* Date */}
+      <div className="text-sm text-slate-600">
+        {d.date}
+      </div>
+
+    </li>
+  ))}
+</ul>
+
           </div>
 
           {/* Venue */}
