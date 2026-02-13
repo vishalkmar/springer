@@ -247,7 +247,7 @@ export function Navbar() {
       children: [
         { label: "About", href: "/about/conference" },
         { label: "Exhibitors", href: "/exibitors" },
-       
+        { label: "Previous Conference", href: "/previous-conference" },
       ],
     },
     {
@@ -272,7 +272,7 @@ export function Navbar() {
     { label: "Session Chairs", href: "/session-chairs" },
     { label: "Publication", href: "/publication" },
     { label: "Awards", href: "/awards" },
-     { label: "Previous Conf.", href: "/previous-conference" },
+    //  { label: "Previous Conf.", href: "/previous-conference" },
     { label: "Venue", href: "/venue" },
     { label: "Contact", href: "/contact" },
   ];
