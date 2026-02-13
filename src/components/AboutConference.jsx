@@ -247,7 +247,7 @@ export default function AboutConferenceSection() {
               <div className="rounded-xl bg-white p-4 ring-1 ring-slate-200">
                 <p className="text-xs font-semibold text-slate-500">Timings</p>
                 <p className="mt-1 text-sm font-semibold text-slate-900">
-                  8:00 AM - 6:00 PM
+                  9:00 AM - 5:00 PM
                 </p>
               </div>
             </div>
