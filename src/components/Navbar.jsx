@@ -241,7 +241,15 @@ export function Navbar() {
 
   const navLinks = [
     { label: "Home", href: "/" },
-    { label: "About", href: "/about/conference" },
+   
+    {
+      label: "About",
+      children: [
+        { label: "About", href: "/about/conference" },
+        { label: "Exhibitors", href: "/exibitors" },
+       
+      ],
+    },
     {
       label: "Papers",
       children: [
@@ -260,7 +268,7 @@ export function Navbar() {
         { label: "Conference Leadership", href: "/conference-leadership" },
       ],
     },
-    { label: "Exhibitor", href: "/exibitors" },
+    
     { label: "Session Chairs", href: "/session-chairs" },
     { label: "Publication", href: "/publication" },
     { label: "Awards", href: "/awards" },

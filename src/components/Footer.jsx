@@ -49,12 +49,15 @@ export function Footer() {
               <ul className="space-y-3 text-sm text-white/90">
                 <li><Link href="/" className="hover:text-white transition-colors flex items-center gap-2">Home</Link></li>
                 <li><Link href="/about/conference" className="hover:text-white transition-colors flex items-center gap-2">About</Link></li>
-                <li><Link href="/conference/agenda" className="hover:text-white transition-colors flex items-center gap-2">Agenda</Link></li>
-                <li><Link href="/speakers" className="hover:text-white transition-colors flex items-center gap-2">Speakers</Link></li>
-                <li><Link href="/exibitors" className="hover:text-white transition-colors flex items-center gap-2">Exhibitor</Link></li>
+                <li><Link href="/call-for-paper" className="hover:text-white transition-colors flex items-center gap-2">Call for Paper</Link></li>
+                <li><Link href="/paper-submission" className="hover:text-white transition-colors flex items-center gap-2">Paper Submission</Link></li>
                 <li><Link href="/registration" className="hover:text-white transition-colors flex items-center gap-2">Registration</Link></li>
-                <li><Link href="/papers" className="hover:text-white transition-colors flex items-center gap-2">Submit Paper</Link></li>
+              
                 <li><Link href="/contact" className="hover:text-white transition-colors flex items-center gap-2">Contact</Link></li>
+                <li><Link href="/venue" className="hover:text-white transition-colors flex items-center gap-2">Venue</Link></li>
+
+                 <li><Link href="/awards" className="hover:text-white transition-colors flex items-center gap-2">Awards</Link></li>
+                  <li><Link href="/previous-conference" className="hover:text-white transition-colors flex items-center gap-2">Previous Conference</Link></li>
               </ul>
             </div>
 
@@ -86,37 +89,55 @@ export function Footer() {
               <h3 className="text-lg font-bold mb-6 text-white border-b border-white/20 pb-2 inline-block">Important Dates</h3>
               <ul className="space-y-4 text-sm">
                 <li className="flex gap-4">
-                  {/* <div className="bg-white/10 rounded px-2 py-1 text-center min-w-[50px]">
-                    <span className="block text-xs uppercase text-white/80">Feb</span>
-                    <span className="block text-lg font-bold text-[hsl(var(--accent))]">20</span>
-                  </div> */}
-                  <div>
-                    <p className="font-medium text-white">To be Announced</p>
-                    {/* <p className="text-xs text-white/70">Deadline for first round</p> */}
-                  </div>
-                </li>
-                {/* 
-                <li className="flex gap-4">
-                  <div className="bg-white/10 rounded px-2 py-1 text-center min-w-[50px]">
+                   <div className="bg-white/10 rounded px-2  text-center min-w-[30px]">
                     <span className="block text-xs uppercase text-white/80">Mar</span>
-                    <span className="block text-lg font-bold text-[hsl(var(--accent))]">15</span>
+                    <span className="block text-xs font-bold text-text-white">15</span>
+                  </div> 
+                   <div>
+                    <p className="font-medium text-white pt-2">Paper Submission Deadline</p>
                   </div>
-                  <div>
-                    <p className="font-medium text-white">Full Paper</p>
-                    <p className="text-xs text-white/70">Final submission deadline</p>
+                 
+                </li>
+                
+                <li className="flex gap-4">
+                  <div className="bg-white/10 rounded px-2 text-center min-w-[30px]">
+                    <span className="block text-xs uppercase text-white/80">Apri</span>
+                    <span className="block text-xs font-bold text-white">15</span>
+                  </div>
+                   <div>
+                    <p className="font-medium text-white pt-2">Notification of Acceptance</p>
                   </div>
                 </li>
                 <li className="flex gap-4">
-                  <div className="bg-white/10 rounded px-2 py-1 text-center min-w-[50px]">
-                    <span className="block text-xs uppercase text-white/80">Jul</span>
-                    <span className="block text-lg font-bold text-[hsl(var(--accent))]">14</span>
+                  <div className="bg-white/10 rounded px-2  text-center min-w-[30px]">
+                    <span className="block text-xs uppercase text-white/80">May</span>
+                    <span className="block text-xs font-bold text-white">15</span>
                   </div>
-                  <div>
-                    <p className="font-medium text-white">Conference Day</p>
-                    <p className="text-xs text-white/70">Opening ceremony</p>
+                   <div>
+                    <p className="font-medium text-white pt-2">Camera Ready Submission</p>
                   </div>
                 </li>
-                 */}
+
+                <li className="flex gap-4">
+                  <div className="bg-white/10 rounded px-2  text-center min-w-[30px]">
+                    <span className="block text-xs uppercase text-white/80">May</span>
+                    <span className="block text-xs font-bold text-white">25</span>
+                  </div>
+                   <div>
+                    <p className="font-medium text-white pt-2">Early Registration Deadline</p>
+                  </div>
+                </li>
+
+                <li className="flex gap-4">
+                  <div className="bg-white/10 rounded px-2  text-center min-w-[30px]">
+                    <span className="block text-xs uppercase text-white/80">July</span>
+                    <span className="block text-xsfont-bold text-white">2-3</span>
+                  </div>
+                   <div>
+                    <p className="font-medium text-white pt-2">Conference Date</p>
+                  </div>
+                </li>
+                
               </ul>
             </div>
           </div>
