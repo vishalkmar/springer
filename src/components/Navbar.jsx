@@ -307,7 +307,7 @@ export function Navbar() {
             {/* Desktop */}
             <div className="hidden lg:flex items-center flex-1 min-w-0">
               {/* ✅ Slightly tighter spacing + smaller font between 1024–1279 */}
-              <div className="flex items-center flex-1 min-w-0 justify-center gap-[2px] xl:gap-1">
+              <div className="flex items-center flex-1 min-w-0 justify-center gap-[4px] xl:gap-1">
                 {navLinks.map((link) => (
                   <DesktopItem
                     key={link.label}
@@ -417,7 +417,7 @@ function DesktopItem({ link, isActive, navigate }) {
               <div
                 key={child.label}
                 onClick={() => navigate(child.href)}
-                className="px-4 py-2 text-sm hover:bg-[#42a1f5] hover:text-white cursor-pointer"
+                className="px-4 py-2 text-xl hover:bg-[#42a1f5] hover:text-white cursor-pointer"
               >
                 {child.label}
               </div>
