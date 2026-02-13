@@ -68,8 +68,8 @@ export function Footer() {
                 <div className="flex items-start gap-3">
                   <Mail className="w-5 h-5 text-white shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-medium text-white">info@ICSCPSIA.org</p>
-                    {/* <a href="mailto:ipee_conf@126.com" className="hover:text-white transition-colors">ipee_conf@126.com</a> */}
+                    {/* <p className="font-medium text-white"></p> */}
+                    <a href="mailto:info@icscpsia.org" className="hover:text-white transition-colors">info@icscpsia.org</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">

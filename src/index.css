@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,40 +6,77 @@
 
 :root {
   /* Professional Blue Theme */
-  --primary: 66 100% 82%;      /* Light Blue #42a1f5 */
+  --primary: 66 100% 82%; /* Light Blue #42a1f5 */
   --primary-foreground: 0 0% 100%;
-  
-  --secondary: 200 85% 96%;    /* Light Blue bg */
+
+  --secondary: 200 85% 96%; /* Light Blue bg */
   --secondary-foreground: 215 90% 35%;
-  
-  --accent: 35 90% 55%;        /* Gold/Orange accent for call-to-actions #F2A900 */
+
+  --accent: 35 90% 55%; /* Gold/Orange accent for call-to-actions #F2A900 */
   --accent-foreground: 0 0% 100%;
-  
+
   --muted: 210 20% 96%;
   --muted-foreground: 215 20% 45%;
-  
+
   --background: 0 0% 100%;
   --foreground: 215 30% 15%;
-  
+
   --card: 0 0% 100%;
   --card-foreground: 215 30% 15%;
-  
+
   --border: 215 20% 90%;
   --input: 215 20% 90%;
   --ring: 215 90% 35%;
-  
+
   --radius: 0.5rem;
 }
 
+/* ✅ Global border-box + full width + no horizontal scroll */
 @layer base {
-  * {
+  *,
+  *::before,
+  *::after {
     @apply border-border;
+    box-sizing: border-box;
   }
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground antialiased font-sans selection:bg-primary/20;
   }
-  h1, h2, h3, h4, h5, h6 {
+
+  #root {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-display tracking-tight text-primary;
+  }
+
+  img,
+  video,
+  canvas,
+  svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
 }
 
@@ -54,17 +91,18 @@
   @apply bg-primary/30 hover:bg-primary/50 rounded-full transition-colors;
 }
 
-/* Smooth Scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
 /* Animation utilities */
 .animate-in {
   animation: fadeIn 0.6s ease-out forwards;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
