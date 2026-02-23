@@ -140,7 +140,10 @@ export default function PreviousConference() {
  function PreviousConferenceCard({
   imageUrl = "/ic2.jpg",
   title = "ICCICT 2026",
-  description = ` We successfully organized ICCICT 2026 as a prestigious international conference, bringing together researchers, academics, and industry professionals from across the globe. The conference served as a dynamic platform for presenting cutting-edge research, fostering meaningful collaborations, and addressing contemporary challenges in computational intelligence, computing technologies, and artificial intelligence. With participation from over 150 delegates representing more than 20 countries, ICCICT 2026 delivered an intellectually enriching, globally connected, and impactful experience for all participants.`,
+  description = ` The International Conference on Computational Intelligence, Computing Technologies, and Artificial Intelligence (ICCICT 2026) was successfully organized as a prestigious international academic forum, bringing together researchers, academicians, and industry professionals from across the globe. The conference served as a platform for presenting innovative research, exchanging ideas, and discussing current challenges in computational intelligence, computing technologies, and artificial intelligence.
+The conference received more than 300 research paper submissions, out of which 86 papers were selected for presentation and publication after a rigorous peer-review process, resulting in an acceptance rate of approximately 30%. ICCICT 2026 also witnessed participation from over 150 delegates.
+
+Overall, the conference provided an intellectually enriching and collaborative environment, strengthening global research interaction and promoting advancements in emerging technological fields.`,
   locationText = "India International Centre, Lodhi Estate, New Delhi, India",
   learnMoreHref = "/previous-conference",
   visitSiteHref = "https://iccict.org/",
